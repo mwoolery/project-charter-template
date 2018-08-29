@@ -1,4 +1,4 @@
-# Project Charter: Hughes Field House
+# Project Charter: Hughes Field House (Team B)
 
 This is the project charter for the Hughes Field House.
 This application will be delivered as a  Web application. (e.g. web, iOS, Android)
@@ -22,6 +22,7 @@ Mentors include:
 
 ## Collaborators
 - Vijay Tupakula, s531507@nwmissouri.edu
+- Girish Guntuku, s531369@nwmissouri.edu
 
 ## Project Purpose
 
