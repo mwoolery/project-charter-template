@@ -1,10 +1,10 @@
-# Project Charter: [Name here]
+# Project Charter: Hughes Field House
 
-This is the project charter for the ___ project.
-This application will be delivered as a  ___ application. (e.g. web, iOS, Android)
+This is the project charter for the Hughes Field House.
+This application will be delivered as a  Web application. (e.g. web, iOS, Android)
 
-- [View Published Version](https://profcase.github.io/project-charter-template)
-- [Source Code](https://github.com/profcase/project-charter-template)
+- [View Published Version](https://vijaythecoder.github.io/project-charter-template)
+- [Source Code](https://github.com/vijaythecoder/project-charter-template)
 
 Update the links above and add team name, year, semester, course, or other important project information
 
@@ -12,7 +12,7 @@ Update the links above and add team name, year, semester, course, or other impor
 
 Clients include:
 
-- list each client and their email
+- VP. Greg Hansen, ghansen@nwmissouri.edu
 
 ## Mentor
 
@@ -20,17 +20,20 @@ Mentors include:
 
 - Dr. Denise Case, dcase@nwmissouri.edu
 
+## Collaborators
+- Vijay Tupakula, s531507@nwmissouri.edu
+
 ## Project Purpose
 
 ## Benefits
 
 ## User Roles
 
-This application is used by __ types of users.
+This application is used by students.
 
 1. Administrator
-2. Role 2 (name each role)
-3. Role 3...
+2. Moderator
+3. Student
 
 ## Stories by Role
 
