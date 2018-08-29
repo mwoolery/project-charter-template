@@ -23,6 +23,7 @@ Mentors include:
 ## Collaborators
 - Vijay Tupakula, s531507@nwmissouri.edu
 - Girish Guntuku, s531369@nwmissouri.edu
+- Matthew Woolery <mwoolery@nwmissouri.edu>
 
 ## Project Purpose
 
