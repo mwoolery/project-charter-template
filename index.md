@@ -24,7 +24,7 @@ Mentors include:
 - Vijay Tupakula, s531507@nwmissouri.edu
 - Girish Guntuku, s531369@nwmissouri.edu
 - Matthew Woolery <mwoolery@nwmissouri.edu>
-- Dattu Bhargav medarametla. s531438@nwmissouri.edu
+- Dattu Bhargav medarametla. s531439@nwmissouri.edu
 
 ## Project Purpose
 
