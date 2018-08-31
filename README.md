@@ -1,6 +1,6 @@
 # Project Charter Template
 
-[Template for a Project Charter](https://profcase.github.io/project-charter-template) document used to formalize project understanding.
+[Template for a Project Charter](https://vijaythecoder.github.io/project-charter-template) document used to formalize project understanding.
 
 [Markdown](https://daringfireball.net/projects/markdown/syntax) makes it easy to track associated history and contributions.
 
