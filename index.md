@@ -27,9 +27,9 @@ Mentors include:
 - Dattu Bhargav medarametla. s531439@nwmissouri.edu
 
 ## Project Purpose
-
+To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly.
 ## Benefits
-
+Anybody can access the application from anywhere with low data usage.
 ## User Roles
 
 This application is used primarily by students.  The users of the app are included below.
@@ -70,11 +70,11 @@ This team is organized as follows.
 
 |                        | Primary   | Secondary   | Content |
 | ---------------------- | --------- | ----------- |---------|
-| Team Lead              |           |             | Repo, intro, budget, schedule, risk, coordination   |
-| Architect              |           |             | E-R diagram |
-| Data                   |           |             | Sample data |
-| UX                     |           |             | Sketches  |
-| Testing & Acceptance   |           |             | Stories, acceptance criteria |
+| Team Lead              |  Vijay    |  Matthew    | Repo, intro, budget, schedule, risk, coordination   |
+| Architect              |  Dattu    |  Girish     | E-R diagram |
+| Data                   |  Matthew  |  Dattu      | Sample data |
+| UX                     |  Girish   |  Vijay      | Sketches  |
+| Testing & Acceptance   |  Sairam   | Vijay       | Stories, acceptance criteria |
 
 ## Scope
 
