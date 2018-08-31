@@ -12,7 +12,7 @@ Update the links above and add team name, year, semester, course, or other impor
 
 Clients include:
 
-- VP. Greg Hansen, ghansen@nwmissouri.edu
+- VP. Greg Hansen, ghansen@nwmissouri.edu.
 
 ## Mentor
 
