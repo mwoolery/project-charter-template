@@ -1,4 +1,4 @@
-# Project Charter: Hughes Field House
+# Project Charter: Hughes Field House (Team B)
 
 This is the project charter for the Hughes Field House.
 This application will be delivered as a  Web application. (e.g. web, iOS, Android)
@@ -12,7 +12,7 @@ Update the links above and add team name, year, semester, course, or other impor
 
 Clients include:
 
-- VP. Greg Hansen, ghansen@nwmissouri.edu
+- VP. Greg Hansen, ghansen@nwmissouri.edu.
 
 ## Mentor
 
@@ -22,14 +22,17 @@ Mentors include:
 
 ## Collaborators
 - Vijay Tupakula, s531507@nwmissouri.edu
+- Girish Guntuku, s531369@nwmissouri.edu
+- Matthew Woolery <mwoolery@nwmissouri.edu>
+- Dattu Bhargav medarametla. s531439@nwmissouri.edu
 
 ## Project Purpose
-
+To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly.
 ## Benefits
-
+Anybody can access the application from anywhere with low data usage.
 ## User Roles
 
-This application is used by students.
+This application is used primarily by students.  The users of the app are included below.
 
 1. Administrator
 2. Moderator
@@ -39,7 +42,27 @@ This application is used by students.
 
 For each role, provide a numbered list of stories in the form "As a [user role], I want [some goal] so that [reason]".
 
-Stories will be maintained in JIRA. 
+Stories will be maintained in JIRA.
+
+## ER Diagram
+
+ An ER Diagram, at least for this phase and looking at the current scope requirements, is not needed since the app is not tracking data but tracking links instead.  Links can be hard coded in since the current scope suggests that the client wants to link to other sites related to services that are needed for each role.  An ER Diagram may be needed in the future as the scope increases, such as the client mentioning that in the future they may want an admin side that allows the admins to post news stories or create push notifications via an application that only the admins have access to.
+
+ ## Sample Data
+
+ As mentioned in the ER Diagram section, there is not currently going to be a need for a database, but sites that would need to be linked to include ones that are seen on the Foster Fitness Center's page on nwmissouri.edu.  It is likely that the client would want to see links to these pages.
+
+ -https://www.nwmissouri.edu/
+ -https://www.nwmissouri.edu/HughesFieldhouse/index.htm
+ -https://www.nwmissouri.edu/HughesFieldhouse/about.htm
+ -https://www.nwmissouri.edu/HughesFieldhouse/story.htm
+ -https://www.nwmissouri.edu/HughesFieldhouse/experience.htm
+ -https://www.nwmissouri.edu/HughesFieldhouse/giving.htm
+ -https://www.nwmissouri.edu/HughesFieldhouse/founding-50.htm
+ -https://www.nwmissouri.edu/HughesFieldhouse/gallery/index.htm
+ -https://www.nwmissouri.edu/HughesFieldhouse/webcam.htm
+
+Other sites may need to be included or some of these maybe decided to be not needed in the future.
 
 ## Team Organization
 
@@ -47,11 +70,11 @@ This team is organized as follows.
 
 |                        | Primary   | Secondary   | Content |
 | ---------------------- | --------- | ----------- |---------|
-| Team Lead              |           |             | Repo, intro, budget, schedule, risk, coordination   |
-| Architect              |           |             | E-R diagram |
-| Data                   |           |             | Sample data |
-| UX                     |           |             | Sketches  |
-| Testing & Acceptance   |           |             | Stories, acceptance criteria |
+| Team Lead              |  Vijay    |  Matthew    | Repo, intro, budget, schedule, risk, coordination   |
+| Architect              |  Dattu    |  Girish     | E-R diagram |
+| Data                   |  Matthew  |  Dattu      | Sample data |
+| UX                     |  Girish   |  Vijay      | Sketches  |
+| Testing & Acceptance   |  Sairam   | Vijay       | Stories, acceptance criteria |
 
 ## Scope
 
