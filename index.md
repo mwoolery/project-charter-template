@@ -21,10 +21,10 @@ Mentors include:
 - Dr. Denise Case, dcase@nwmissouri.edu
 
 ## Collaborators
-- Vijay Tupakula, s531507@nwmissouri.edu
-- Girish Guntuku, s531369@nwmissouri.edu
+- Vijay Tupakula, <s531507@nwmissouri.edu>
+- Girish Guntuku, <s531369@nwmissouri.edu>
 - Matthew Woolery <mwoolery@nwmissouri.edu>
-- Dattu Bhargav medarametla. s531439@nwmissouri.edu
+- Dattu Bhargav medarametla. <s531439@nwmissouri.edu>
 
 ## Project Purpose
 To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly.
