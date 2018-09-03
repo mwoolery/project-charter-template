@@ -25,6 +25,7 @@ Mentors include:
 - Girish Guntuku, <s531369@nwmissouri.edu>
 - Matthew Woolery <mwoolery@nwmissouri.edu>
 - Dattu Bhargav medarametla. <s531439@nwmissouri.edu>
+- Satya Sai Ram Vankina <s531508@nwmissouri.edu>
 
 ## Project Purpose
 To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly.
