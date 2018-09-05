@@ -117,7 +117,7 @@ Include:
 
 - Final stories by role (see above)
 - Final acceptance criteria (see above)
-- Final E-R diagram (link)
+[ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/ERDiagram.pdf) 
 - Final set of sample data (link)
 - Detailed project sketches by platform (link - images must be displayed)
 - Architectural decisions, including platforms, languages, frameworks, libraries, cloud resources, data stores, releases, milestones, authentication, authorization, responsive supports, progressive supports, security, performance requirements, traditional or SPA, client-side rendering vs server-side rendering, REST vs GraphQL, web vs native vs hybrid, etc.
