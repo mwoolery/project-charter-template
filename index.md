@@ -94,11 +94,11 @@ Deliverables:
 
 This phase includes the development of:
 
-[stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
+-[stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
 - Initial acceptance criteria (link)
 - [ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/ERDiagram.pdf)
-- Initial sample data (link)
-- Initial project sketches (link - images must be displayed)
+- [Initial sample data](https://github.com/vijaythecoder/project-charter-template/blob/master/Book1.xlsx)
+- [Initial project sketches](https://github.com/vijaythecoder/project-charter-template/tree/master/sketches)
 - For each phase, initial scope, schedule, budget (included in this document)
 
 
@@ -115,9 +115,9 @@ Deliverables:
 
 Include:
 
-[stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
+-[stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
 - Final acceptance criteria (see above)
-[ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/ERDiagram.pdf) 
+-[ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/ERDiagram.pdf) 
 - Final set of sample data (link)
 - Detailed project sketches by platform (link - images must be displayed)
 - Architectural decisions, including platforms, languages, frameworks, libraries, cloud resources, data stores, releases, milestones, authentication, authorization, responsive supports, progressive supports, security, performance requirements, traditional or SPA, client-side rendering vs server-side rendering, REST vs GraphQL, web vs native vs hybrid, etc.
