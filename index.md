@@ -94,7 +94,7 @@ Deliverables:
 
 This phase includes the development of:
 
-- Initial stories by role (link)
+[stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
 - Initial acceptance criteria (link)
 - [ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/ERDiagram.pdf)
 - Initial sample data (link)
@@ -115,7 +115,7 @@ Deliverables:
 
 Include:
 
-- Final stories by role (see above)
+[stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
 - Final acceptance criteria (see above)
 [ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/ERDiagram.pdf) 
 - Final set of sample data (link)
