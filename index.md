@@ -98,10 +98,10 @@ This phase includes the development of:
 - [stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
 - Initial acceptance criteria (link)
 - [ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/ERdiagramFieldHouse.pdf)
-- [Initial sample data](https://github.com/vijaythecoder/project-charter-template/blob/master/Book1.xlsx)
-- [Initial project sketches](https://github.com/vijaythecoder/project-charter-template/tree/master/sketches)
+- [Initial sample data](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/Book1.xlsx)
+- [Initial project sketches](https://github.com/vijaythecoder/project-charter-template/tree/master/Documents/sketches)
 - For each phase, initial scope, schedule, budget (included in this document)
-
+- [RFP]()
 
 ### Phase 2 - Definition and planning (Module 2 and 3)
 
