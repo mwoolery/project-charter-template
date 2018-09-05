@@ -96,7 +96,7 @@ This phase includes the development of:
 
 - Initial stories by role (link)
 - Initial acceptance criteria (link)
-- Initial E-R diagram (link)
+- [ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/ERDiagram.pdf)
 - Initial sample data (link)
 - Initial project sketches (link - images must be displayed)
 - For each phase, initial scope, schedule, budget (included in this document)
