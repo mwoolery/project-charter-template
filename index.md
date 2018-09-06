@@ -1,7 +1,7 @@
 # Project Charter: Hughes Field House (Team B)
 
 This is the project charter for the Hughes Field House.
-This application will be delivered as a  Web application. (e.g. web, iOS, Android)
+This application will be delivered as a  Progressive Web Application. (e.g. web, iOS, Android)
 
 - [View Published Version](https://vijaythecoder.github.io/project-charter-template)
 - [Source Code](https://github.com/vijaythecoder/project-charter-template)
@@ -28,20 +28,22 @@ Mentors include:
 - Satya Sai Ram Vankina <S531508@nwmissouri.edu>
 
 ## Project Purpose
-To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly.
+To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly and full of information.
 ## Benefits
-Anybody can access the application from anywhere with low data usage.
+Anybody can access the application either on the web, or offline if they have downloaded the app to their phone
 ## User Roles
 
 This application is used primarily by students.  The users of the app are included below.
 
-1. Administrator
-2. Moderator
-3. Student
+1. General User
+2. Fieldhouse Team
+
 
 ## Stories by Role
 
-For each role, provide a numbered list of stories in the form "As a [user role], I want [some goal] so that [reason]".
+User Stories by above mentioned user roles
+1."I want to be able to find information about the Hughes Fieldhouse, be able to contact the Fieldhouse team if I need help or if I am interested in Reserving the field, and I want to be able understand the experience provided by the Fieldhouse.  I want to do this all in 3 clicks or less." 
+2. "I want to do everything that the general user would want to do, but I also would like to provide some real time information to the site, that way people can feel like they are here, even if they are not."
 
 Stories will be maintained in JIRA.
 
@@ -49,7 +51,7 @@ Stories will be maintained in JIRA.
 
  An ER Diagram, at least for this phase and looking at the current scope requirements, is not needed since the app is not tracking data but tracking links instead.  Links can be hard coded in since the current scope suggests that the client wants to link to other sites related to services that are needed for each role.  An ER Diagram may be needed in the future as the scope increases, such as the client mentioning that in the future they may want an admin side that allows the admins to post news stories or create push notifications via an application that only the admins have access to.
 
- ## Sample Data
+ ## Sample Pages to be Tracked
 
  As mentioned in the ER Diagram section, there is not currently going to be a need for a database, but sites that would need to be linked to include ones that are seen on the Foster Fitness Center's page on nwmissouri.edu.  It is likely that the client would want to see links to these pages.
 
@@ -63,7 +65,7 @@ Stories will be maintained in JIRA.
  -https://www.nwmissouri.edu/HughesFieldhouse/gallery/index.htm
  -https://www.nwmissouri.edu/HughesFieldhouse/webcam.htm
 
-Other sites may need to be included or some of these maybe decided to be not needed in the future.
+Other sites may need to be included or some of these maybe decided to be not needed in the future.  The client wishes to have it look similar to https://www.nwmissouri.edu/StudentSuccess/
 
 ## Team Organization
 
@@ -72,7 +74,7 @@ This team is organized as follows.
 |                        | Primary   | Secondary   | Content |
 | ---------------------- | --------- | ----------- |---------|
 | Team Lead              |  Vijay    |  Matthew    | Repo, intro, budget, schedule, risk, coordination   |
-| Architect              |  Dattu    |  Girish     | E-R diagram |
+| Architect              |  Dattu    |  Girish     | Page Design |
 | Data                   |  Matthew  |  Dattu      | Sample data |
 | UX                     |  Girish   |  Vijay      | Sketches  |
 | Testing & Acceptance   |  Sairam   | Vijay       | Stories, acceptance criteria |
