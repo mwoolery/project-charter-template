@@ -103,14 +103,15 @@ Deliverables:
 This phase includes the development of:
 
 
-- [stories by role](https://vijaythecoder.github.io/project-charter-template/Documents/StoriesByRoles.pdf)
-- Initial acceptance criteria (link)
-- [ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/ERdiagramFieldHouse.pdf)
-- [Initial sample data](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/Book1.xlsx)
-- [Initial project sketches](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Content.PNG)
-(https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Home.PNG)
+- [Stories by Role](https://vijaythecoder.github.io/project-charter-template/Documents/StoriesByRoles.pdf)
+- [Initial acceptance criteria](https://vijaythecoder.github.io/project-charter-template/Documents/AcceptanceCriteria.pdf)
+- ER Diagram - Not Needed Due to no need for Database
+- Initial sample data - Not Needed Due to no need for Database
+-[Pages Information](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/Supplement%20Items/Page%20Layout.xlsx)
+- [Initial project sketch Content](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Content.PNG)
+- [Initial project sketch Menu](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Home.PNG)
 - For each phase, initial scope, schedule, budget (included in this document)
-- [RFP](https://github.com/profcase/rfp-fieldhouse/blob/master/index.md)
+- [Original RFP](https://github.com/profcase/rfp-fieldhouse/blob/master/index.md)
 
 ### Phase 2 - Definition and planning (Module 2 and 3)
 
