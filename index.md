@@ -97,13 +97,14 @@ Deliverables:
 This phase includes the development of:
 
 
-- [stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)
+- [stories by role](https://vijaythecoder.github.io/project-charter-template/Documents/StoriesByRoles.pdf)
 - Initial acceptance criteria (link)
 - [ER Diagram](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/ERdiagramFieldHouse.pdf)
 - [Initial sample data](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/Book1.xlsx)
-- [Initial project sketches](https://github.com/vijaythecoder/project-charter-template/tree/master/Documents/sketches)
+- [Initial project sketches](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Content.PNG)
+(https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Home.PNG)
 - For each phase, initial scope, schedule, budget (included in this document)
-- [RFP]()
+- [RFP](https://github.com/profcase/rfp-fieldhouse/blob/master/index.md)
 
 ### Phase 2 - Definition and planning (Module 2 and 3)
 
