@@ -6,26 +6,30 @@ This application will be delivered as a  Progressive Web Application. (e.g. web,
 - [View Published Version](https://vijaythecoder.github.io/project-charter-template)
 - [Source Code](https://github.com/vijaythecoder/project-charter-template)
 
-Update the links above and add team name, year, semester, course, or other important project information
+Team B
+Fall 2018
+Graduate Directed Project 1
+Hughes Fieldhouse PWA
 
 ## Client
 
 Clients include:
 
-- VP. Greg Hansen, ghansen@nwmissouri.edu.
+- VP. Greg Hansen, <ghansen@nwmissouri.edu>
 
 ## Mentor
 
 Mentors include:
 
-- Dr. Denise Case, dcase@nwmissouri.edu
+- Dr. Denise Case, <dcase@nwmissouri.edu>
+- GA Shivani Busireddy, <s531494@nwmissouri.edu>
 
 ## Collaborators
 - Vijay Tupakula, <s531507@nwmissouri.edu>
 - Girish Guntuku, <s531369@nwmissouri.edu>
 - Matthew Woolery <mwoolery@nwmissouri.edu>
 - Dattu Bhargav medarametla. <s531439@nwmissouri.edu>
-- Satya Sai Ram Vankina <S531508@nwmissouri.edu>
+- Satya Sai Ram Vankina <s531508@nwmissouri.edu>
 
 ## Project Purpose
 To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly and full of information.
@@ -42,7 +46,8 @@ This application is used primarily by students.  The users of the app are includ
 ## Stories by Role
 
 User Stories by above mentioned user roles
-1."I want to be able to find information about the Hughes Fieldhouse, be able to contact the Fieldhouse team if I need help or if I am interested in Reserving the field, and I want to be able understand the experience provided by the Fieldhouse.  I want to do this all in 3 clicks or less." 
+
+1. "I want to be able to find information about the Hughes Fieldhouse, be able to contact the Fieldhouse team if I need help or if I am interested in Reserving the field, and I want to be able understand the experience provided by the Fieldhouse.  I want to do this all in 3 clicks or less." 
 2. "I want to do everything that the general user would want to do, but I also would like to provide some real time information to the site, that way people can feel like they are here, even if they are not."
 
 Stories will be maintained in JIRA.
@@ -51,9 +56,10 @@ Stories will be maintained in JIRA.
 
  An ER Diagram, at least for this phase and looking at the current scope requirements, is not needed since the app is not tracking data but tracking links instead.  Links can be hard coded in since the current scope suggests that the client wants to link to other sites related to services that are needed for each role.  An ER Diagram may be needed in the future as the scope increases, such as the client mentioning that in the future they may want an admin side that allows the admins to post news stories or create push notifications via an application that only the admins have access to.
 
+
  ## Sample Pages to be Tracked
 
- As mentioned in the ER Diagram section, there is not currently going to be a need for a database, but sites that would need to be linked to include ones that are seen on the Foster Fitness Center's page on nwmissouri.edu.  It is likely that the client would want to see links to these pages.
+ As mentioned in the ER Diagram section, there is not currently going to be a need for a database, but sites that would need to be linked to include ones that are seen on the Foster Fitness Center's page on nwmissouri.edu.  It is likely that the client would want to see links to these pages on the home page.
 
  -https://www.nwmissouri.edu/
  -https://www.nwmissouri.edu/HughesFieldhouse/index.htm
@@ -65,7 +71,7 @@ Stories will be maintained in JIRA.
  -https://www.nwmissouri.edu/HughesFieldhouse/gallery/index.htm
  -https://www.nwmissouri.edu/HughesFieldhouse/webcam.htm
 
-Other sites may need to be included or some of these maybe decided to be not needed in the future.  The client wishes to have it look similar to https://www.nwmissouri.edu/StudentSuccess/
+Other sites may need to be included or some of these maybe decided to be not needed in the future.  The client wishes to have it look similar to https://www.nwmissouri.edu/StudentSuccess/ .  Information from https://www.nwmissouri.edu/crec/ can also be included.
 
 ## Team Organization
 
@@ -75,8 +81,8 @@ This team is organized as follows.
 | ---------------------- | --------- | ----------- |---------|
 | Team Lead              |  Vijay    |  Matthew    | Repo, intro, budget, schedule, risk, coordination   |
 | Architect              |  Dattu    |  Girish     | Page Design |
-| Data                   |  Matthew  |  Dattu      | Sample data |
-| UX                     |  Girish   |  Vijay      | Sketches  |
+| Data                   |  Matthew  |  Dattu      | Gather Information from Pre-existing pages |
+| UX                     |  Girish   |  Vijay      | Sketching and designing new pages  |
 | Testing & Acceptance   |  Sairam   | Vijay       | Stories, acceptance criteria |
 
 ## Scope
