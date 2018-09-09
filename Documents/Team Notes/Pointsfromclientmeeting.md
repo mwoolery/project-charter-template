@@ -1,0 +1,1 @@
+- From the meeting we got to know that the page must inlcude various elements such as History,Staff and Layout of the field and these all must be accessed with in 3-5 clicks and must be completed and ready to go by opening of the field house.
