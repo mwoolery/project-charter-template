@@ -30,6 +30,14 @@ Mentors include:
 - Matthew Woolery <mwoolery@nwmissouri.edu>
 - Dattu Bhargav medarametla. <s531439@nwmissouri.edu>
 - Satya Sai Ram Vankina <s531508@nwmissouri.edu>
+## Primary Contacts
+- Primary Contact – Matthew Woolery
+E-mail - <mwoolery@nwmissouri.edu>
+Phone Number - +1 ()
+
+- Secondary Contact - Vijay Kumar Tupakula  
+E-mail - s531507@nwmissouri.edu – 
+Phone Number - +1 (646)441-7873
 
 ## Project Purpose
 To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly and full of information.
