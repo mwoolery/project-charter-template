@@ -50,7 +50,6 @@ This application is used primarily by students.  The users of the app are includ
 1. General User
 2. Fieldhouse Team
 
-
 ## Stories by Role
 
 User Stories by above mentioned user roles
