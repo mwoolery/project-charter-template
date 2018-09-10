@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+        
           <a href = "http://www.nwmissouri.edu">
           <img src= "../northwest.png" className="App-logo" alt="logo" />
          </a>
@@ -19,14 +20,21 @@ class App extends Component {
         <section className="announcements--section">
       <div className="container">
           <h1> Announcements and News</h1>
-      </div>
-      <div className="announcements--section__inner">
-          <Announcements />
           
+          <a class="twitter-timeline" data-chrome="nofooter noheader noborders" data-width="700px" data-height="700px" data-partner="tweetdeck" href="https://twitter.com/woolerymatt1/timelines/1037388455716835328?ref_src=twsrc%5Etfw">Demo For Fieldhouse App</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-  </section>
-      </div>
+      <div className="container">
+      
      
+      </div>
+      
+    
+      
+     
+  </section>
+  
+      </div>
+      
     );
   }
 }
