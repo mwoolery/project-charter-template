@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <header>
-      <span>Hughes FieldHouse</span>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </header>
     <main>
       <router-view></router-view>
@@ -16,6 +20,22 @@ export default {
 </script>
 
 <style>
+
+ul li a {
+  color: white;
+  line-height: 26px;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #a1b1c1;
+}
+
+ul {
+  float: right;
+  display: block;
+  
+}
+
 body {
   margin: 0;
 }
