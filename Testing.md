@@ -32,3 +32,10 @@ Types of testing tools to use
 5. Safari Web Inspector - to know server to browser send time
 6. Web Developer Firefox Extension - for broken images, testing layouts in multiple screen sizes, viewing cookie information
 7. W3C Validation Services 
+
+Security testing tools
+1.Static Security Testing
+2.Dynamic Security Testing
+3.Software Composition Analysis
+4.Database Security scanning
+5.Application Security Testing
