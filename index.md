@@ -35,14 +35,14 @@ Mentors include:
 - Saicharan Gurudu, <s531499@nwmissouri.edu>
 - Yashwanth Reddy Bommineni, <s531519@nwmissouri.edu>
 
-## Primary Contacts
+## Client Contacts
 - Primary Contact – Matthew Woolery
 E-mail - <mwoolery@nwmissouri.edu>
 Phone Number - +1 ()
 
-- Secondary Contact - Vijay Kumar Tupakula  
-E-mail - s531507@nwmissouri.edu – 
-Phone Number - +1 (646)441-7873
+- Secondary Contact - Santosh Sekhar Muchkur Bogarajula 
+E-mail - <s531503@nwmissouri.edu> – 
+Phone Number - +1 (816)585-6206
 
 ## Project Purpose
 To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly and full of information.
