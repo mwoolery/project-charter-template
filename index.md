@@ -36,12 +36,12 @@ Mentors include:
 - Yashwanth Reddy Bommineni, <s531519@nwmissouri.edu>
 
 ## Client Contacts
-- Primary Contact – Matthew Woolery
-E-mail - <mwoolery@nwmissouri.edu>
-Phone Number - +1 ()
+- Primary Contact – Matthew Woolery ,
+E-mail - <mwoolery@nwmissouri.edu> ,
+Phone Number - +1 (660)541-5507
 
-- Secondary Contact - Santosh Sekhar Muchkur Bogarajula 
-E-mail - <s531503@nwmissouri.edu> – 
+- Secondary Contact - Santosh Sekhar Muchkur Bogarajula ,
+E-mail - <s531503@nwmissouri.edu> ,
 Phone Number - +1 (816)585-6206
 
 ## Project Purpose
