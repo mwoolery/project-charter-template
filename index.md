@@ -1,4 +1,4 @@
-# Project Charter: Hughes Field House (Team B)
+# Project Charter: Hughes Field House Team
 
 This is the project charter for the Hughes Field House.
 This application will be delivered as a  Progressive Web Application. (e.g. web, iOS, Android)
@@ -6,7 +6,7 @@ This application will be delivered as a  Progressive Web Application. (e.g. web,
 - [View Published Version](https://vijaythecoder.github.io/project-charter-template)
 - [Source Code](https://github.com/vijaythecoder/project-charter-template)
 
-Team B
+
 Fall 2018
 Graduate Directed Project 1
 Hughes Fieldhouse PWA
@@ -27,9 +27,14 @@ Mentors include:
 ## Collaborators
 - Vijay Tupakula, <s531507@nwmissouri.edu>
 - Girish Guntuku, <s531369@nwmissouri.edu>
-- Matthew Woolery <mwoolery@nwmissouri.edu>
-- Dattu Bhargav medarametla. <s531439@nwmissouri.edu>
-- Satya Sai Ram Vankina <s531508@nwmissouri.edu>
+- Matthew Woolery, <mwoolery@nwmissouri.edu>
+- Dattu Bhargav medarametla, <s531439@nwmissouri.edu>
+- Satya Sai Ram Vankina, <s531508@nwmissouri.edu>
+- Santosh Sekhar Muchkur Bogarajula, <s531503@nwmissouri.edu>
+- Sai Sirisha Devineni, <s531367@nwmissouri.edu>
+- Saicharan Gurudu, <s531499@nwmissouri.edu>
+- Yashwanth Reddy Bommineni, <s531519@nwmissouri.edu>
+
 ## Primary Contacts
 - Primary Contact – Matthew Woolery
 E-mail - <mwoolery@nwmissouri.edu>
