@@ -1,4 +1,4 @@
-# Project Charter: Hughes Field House (Team B)
+# Project Charter: Hughes Field House Team
 
 This is the project charter for the Hughes Field House.
 This application will be delivered as a  Progressive Web Application. (e.g. web, iOS, Android)
@@ -6,7 +6,7 @@ This application will be delivered as a  Progressive Web Application. (e.g. web,
 - [View Published Version](https://vijaythecoder.github.io/project-charter-template)
 - [Source Code](https://github.com/vijaythecoder/project-charter-template)
 
-Team B
+
 Fall 2018
 Graduate Directed Project 1
 Hughes Fieldhouse PWA
@@ -27,17 +27,22 @@ Mentors include:
 ## Collaborators
 - Vijay Tupakula, <s531507@nwmissouri.edu>
 - Girish Guntuku, <s531369@nwmissouri.edu>
-- Matthew Woolery <mwoolery@nwmissouri.edu>
-- Dattu Bhargav medarametla. <s531439@nwmissouri.edu>
-- Satya Sai Ram Vankina <s531508@nwmissouri.edu>
-## Primary Contacts
-- Primary Contact – Matthew Woolery
-E-mail - <mwoolery@nwmissouri.edu>
-Phone Number - +1 ()
+- Matthew Woolery, <mwoolery@nwmissouri.edu>
+- Dattu Bhargav medarametla, <s531439@nwmissouri.edu>
+- Satya Sai Ram Vankina, <s531508@nwmissouri.edu>
+- Santosh Sekhar Muchkur Bogarajula, <s531503@nwmissouri.edu>
+- Sai Sirisha Devineni, <s531367@nwmissouri.edu>
+- Saicharan Gurudu, <s531499@nwmissouri.edu>
+- Yashwanth Reddy Bommineni, <s531519@nwmissouri.edu>
 
-- Secondary Contact - Vijay Kumar Tupakula  
-E-mail - s531507@nwmissouri.edu – 
-Phone Number - +1 (646)441-7873
+## Client Contacts
+- Primary Contact – Matthew Woolery ,
+E-mail - <mwoolery@nwmissouri.edu> ,
+Phone Number - +1 (660)541-5507
+
+- Secondary Contact - Santosh Sekhar Muchkur Bogarajula ,
+E-mail - <s531503@nwmissouri.edu> ,
+Phone Number - +1 (816)585-6206
 
 ## Project Purpose
 To develop a progressive web apps for existing Hughes fieldhouse website and to make it user-friendly and full of information.
@@ -115,8 +120,8 @@ This phase includes the development of:
 - ER Diagram - Not Needed Due to no need for Database
 - Initial sample data - Not Needed Due to no need for Database
 -[Pages Information](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/Supplement%20Items/Page%20Layout.xlsx)
-- [Initial project sketch Content](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Content.PNG)
-- [Initial project sketch Menu](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Home.PNG)
+
+- [Initial project sketch - Home page](https://raw.githubusercontent.com/vijaythecoder/project-charter-template/master/Documents/UI%20Designs/home%20page%20view.png)
 - For each phase, initial scope, schedule, budget (included in this document)
 - [Original RFP](https://github.com/profcase/rfp-fieldhouse/blob/master/index.md)
 
