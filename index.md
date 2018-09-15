@@ -120,8 +120,8 @@ This phase includes the development of:
 - ER Diagram - Not Needed Due to no need for Database
 - Initial sample data - Not Needed Due to no need for Database
 -[Pages Information](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/Supplement%20Items/Page%20Layout.xlsx)
-- [Initial project sketch Content](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Content.PNG)
-- [Initial project sketch Menu](https://vijaythecoder.github.io/project-charter-template/Documents/UI%20Designs/Home.PNG)
+
+- [Initial project sketch - Home page](https://raw.githubusercontent.com/vijaythecoder/project-charter-template/master/Documents/UI%20Designs/home%20page%20view.png)
 - For each phase, initial scope, schedule, budget (included in this document)
 - [Original RFP](https://github.com/profcase/rfp-fieldhouse/blob/master/index.md)
 
