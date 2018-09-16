@@ -142,7 +142,7 @@ Include:
 - Final acceptance criteria (see above)
 - [ER Diagram]([stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)) 
 - Final set of sample data (link)
-- [Detailed one page sketch for project] (https://raw.githubusercontent.com/vijaythecoder/project-charter-template/master/Documents/UI%20Designs/Actual%20home%20page%20sketch.png)
+- [Detailed One Page sketch for project](https://raw.githubusercontent.com/vijaythecoder/project-charter-template/master/Documents/UI%20Designs/Actual%20home%20page%20sketch.png)
 - Architectural decisions, including platforms, languages, frameworks, libraries, cloud resources, data stores, releases, milestones, authentication, authorization, responsive supports, progressive supports, security, performance requirements, traditional or SPA, client-side rendering vs server-side rendering, REST vs GraphQL, web vs native vs hybrid, etc.
 - List of projects with versions in JIRA
 - Schedules for sprints, client presentations, milestones and acceptance criteria in JIRA
