@@ -13,3 +13,30 @@ body {
     padding-top: 56px;
   }
 }
+.sec1{
+  background-color:rgb(109, 105, 105);
+  position:relative;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+}
+.blink{
+  color:white;
+}
+.mapouter
+{
+  text-align:right;
+  height:220px;
+  width:350px;
+ 
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:220px;
+  width:350px;
+ 
+}
+.lis{
+  list-style-type:none;
+}
