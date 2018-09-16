@@ -138,7 +138,7 @@ Deliverables:
 
 Include:
 
-- [stories by role](https://github.com/vijaythecoder/project-charter-template/raw/master/Documents/StoriesByRolePhase2.pdf)
+- [stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRolePhase2.pdf)
 - Final acceptance criteria (see above)
 - [ER Diagram]([stories by role](https://github.com/vijaythecoder/project-charter-template/blob/master/Documents/StoriesByRole.pdf)) 
 - Final set of sample data (link)
