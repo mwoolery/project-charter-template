@@ -89,13 +89,16 @@ Other sites may need to be included or some of these maybe decided to be not nee
 
 This team is organized as follows.
 
-|                        | Primary   | Secondary   | Content |
-| ---------------------- | --------- | ----------- |---------|
-| Team Lead              |  Vijay    |  Matthew    | Repo, intro, budget, schedule, risk, coordination   |
-| Architect              |  Dattu    |  Girish     | Page Design |
-| Data                   |  Matthew  |  Dattu      | Gather Information from Pre-existing pages |
-| UX                     |  Girish   |  Vijay      | Sketching and designing new pages  |
-| Testing & Acceptance   |  Sairam   | Vijay       | Stories, acceptance criteria |
+|          Role                   |  Team Members                      | Content |
+| ------------------------------- | -----------------------------------|----------
+| Client Managers/Point of contact| Santosh, Matthew                   | Meeting invitations, thank you mails|
+| Architecture                    |Vijay, Sirisha, Sairam              | Technical implementation decisions |
+| Project Managers                |Yashwanth, Charan, Sairam           | Team deadlines and reporting to client mangers|
+| Marketing Leads                 |Charan, Yashwanth, Santosh          | Maintainig social media  |
+| Scrum Masters                   |Yashwanth, Girish, Dattu            | Responsible for tasks in jira |
+| UX                              |Santosh, Matthew, Sirisha           | Page designs, colors          |
+| Quality Assurance               |Santosh, Girish, Sairam             | Unit tests, acceptance criteria |
+| Development                     |Vijay, Sirisha, Matthew, Charan, Dattu, Yashwanth, Sairam, Santosh | Plan and perform implementation |
 
 ## Scope
 
