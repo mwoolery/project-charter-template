@@ -14,6 +14,11 @@ body {
   }
 }
 
+.nav-link {
+  color: white;
+  font-size: small;
+}
+
 .sec1{
   background-color:rgb(109, 105, 105);
   position:relative;
