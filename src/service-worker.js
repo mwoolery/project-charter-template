@@ -4,21 +4,8 @@ var cacheName = 'HughesFHcache';
 var filesToCache = [
   '/',
   '/index.html',
-  '/scripts/app.js',
-  '/styles/inline.css',
-  '/img/1.PNG',
-  '/img/2.PNG',
-  '/img/3.PNG',
-  '/img/4.PNG',
-  '/img/5.PNG',
-  '/img/6.PNG',
-  '/img/campusbg.PNG',
-  '/img/Invitation.PNG',
-  '/img/NorthwestEmblem.PNG',
-  '/img/NWemblem.PNG',
-  '/img/nwlogo-white.PNG',
-  '/img/Qrcode.jpg',
-  '/vendor/bootstrap/css/bootstrap.min.css'
+  '/scripts/register-service-worker.js'
+ 
 
  
 ];
