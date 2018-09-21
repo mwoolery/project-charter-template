@@ -4,7 +4,19 @@ var cacheName = 'HughesFHcache';
 var filesToCache = [
   '/',
   '/index.html',
-  '/register-service-worker.js'
+  '/register-service-worker.js',
+  '/img/campusbg.PNG',
+  '/img/3.PNG',
+  '/img/Invitation.PNG',
+  '/img/1.PNG',
+  '/img/4.PNG',
+  '/img/6.PNG',
+  '/img/2.PNG',
+  '/img/5.PNG',
+  '/img/nwlogo-white.png',
+  '/img/NWemblem.PNG',
+  '/css/style.css'
+
  
 
  
