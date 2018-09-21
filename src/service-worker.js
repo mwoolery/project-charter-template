@@ -49,18 +49,23 @@ self.addEventListener('activate', function(e) {
 });
 
 
-
-//just checks for a cache
-self.addEventListener('fetch', function(e) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
+// check for the cache
+self.addEventListener('fetch', (event) => {
+  if (event.request.method === 'GET') {
+    event.respondWith(
+      caches.match(event.request)
+      .then((cached) => {
+        var networked = fetch(event.request)
+          .then((response) => {
+            let cacheCopy = response.clone()
+            caches.open(cacheName)
+              .then(cache => cache.put(event.request, cacheCopy))
+            return response;
+          })
+          .catch(() => caches.match(offlinePage));
+        return cached || networked;
+      })
     )
-  );
+  }
+  return;
 });
