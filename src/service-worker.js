@@ -4,7 +4,7 @@ var cacheName = 'HughesFHcache';
 var filesToCache = [
   '/',
   '/index.html',
-  '/scripts/register-service-worker.js'
+  '/register-service-worker.js'
  
 
  
