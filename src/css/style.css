@@ -114,3 +114,10 @@ text-align: right;
   transform: scale(1.1);
   
 }
+.storyb img{
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.storyb{
+  overflow: hidden;
+}
