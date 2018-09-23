@@ -1,2 +1,0 @@
-## Guidelines for Notes Folder
-Team Members when creating notes such as todo's or team meeting information, include your name and date somewhere on the file that way we can figure out who did what as more commits come in.
