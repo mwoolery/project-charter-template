@@ -15,13 +15,22 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      p {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0px;
+        background-color: #006747;
+        color: white;
+      }
+      </style>
     
   </head>
 
   <body  background="img\campusbg.PNG">
       <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #006747;">
           <div class="container">
-            <a class="navbar-brand " href="#"> <img src="img\NWemblem.PNG" width="80" height="40" class="d-inline-block align-top" alt="">
+            <a class="navbar-brand " href="#"> <img src="img\NWemblem.PNG" width="120" height="50" class="d-inline-block logo" alt="">
               Hughes Field House</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
               <span class="navbar-toggler-icon"></span>
@@ -241,9 +250,31 @@
     <div class="col-md-8">
       <!-- <img class="img-fluid" src="https://www.nwmissouri.edu/HughesFieldhouse/images/main-homepage.jpg" alt=""> -->
       <a href="#">
-        <img class="img-fluid" src="img\Invitation.PNG"
+        <img class="imageqwe" src="img\Invitation.PNG"
           alt="">
       </a>
+      <script>
+
+        var countDownDate = new Date("Oct 12, 2018 16:00:25").getTime();
+        var x = setInterval(function() {
+
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countDown").innerHTML = days + "  Days   " + hours + "  Hours   "
+            + minutes + "  Minutes   " + seconds + "  Seconds   ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countDown").innerHTML = "DAYSEXPIRED";
+            }
+        }, 1000);
+        
+        </script>
+<p id="countDown"></p>
+        
     </div>
     <div class="col-md-4","fl">
       <!-- asside -->
@@ -269,7 +300,7 @@
          <br> <strong>Toll-free:</strong>	800.633.1175
           <br><strong>Email:</strong>	admissions@nwmissouri.edu
       </section>
-<br>
+     <br>
       <section class="sec1">
        
         <div class="mapouter"
@@ -279,7 +310,7 @@
           </div>
           </div>
       </section>
-    </div>
+</div>
 
     <!-- /.row -->
 
