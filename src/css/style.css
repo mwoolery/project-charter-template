@@ -15,6 +15,23 @@ body {
   /* background-image: url(C:/Users/S531508/Downloads/Fall2018/GDP/project-charter-template/src/img/navbg.PNG); */
   /* background-color: rgba(240, 248, 255, 0.048); */
   background-repeat: repeat-x;
+  position: absolute;
+  padding-top: 0%;
+  /* margin: 10; */
+margin-left: auto;
+margin-inline-start: auto;
+margin-inline-end: auto;
+/* padding: 14px 16px; */
+top: 35px;
+width: 100%;
+}
+
+.nwnav1{
+    float: left;
+    /* width: 960px; */
+    padding-left: 18px;
+    height: 35px;
+    position: absolute;
 }
 
  #nwlogo{
