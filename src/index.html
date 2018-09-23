@@ -16,23 +16,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <style>
-      p {
-        text-align: center;
-        font-size: 30px;
-        margin-top: 0px;
-        background-color: #006747;
-        color: white;
-      }
-      </style>
     
   </head>
 
   <body  background="img\campusbg.PNG">
-      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #006747;">
+      <nav class="navbar navbar-expand-lg navbar-dark backgroundNav" >
           <div class="container">
-            <a class="navbar-brand " href="#"> <img src="img\NWemblem.PNG" width="120" height="50" class="d-inline-block logo" alt="">
-              Hughes Field House</a>
+            <a class="navbar-brand " href="#"><div id = "nwlogo" img src="img\NWemblem.PNG" width="120" height="0" class="d-inline-block logo" alt="" ></div> 
+              Hughes Field House </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,7 +34,7 @@
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       About
                     </a>
@@ -54,10 +45,12 @@
                       
                     </div>
                   </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Experience</a>
-                </li>
-                <li class="nav-item dropdown" style="background-color: #006747;">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Experience
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                <li class="nav-item dropdown active" >
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Giving
                     </a>
@@ -69,7 +62,7 @@
   
                     </div>
                   </li>
-                <li class="nav-item dropdown" style="background-color: #006747">
+                <li class="nav-item dropdown active" >
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Media
                     </a>
@@ -85,7 +78,7 @@
             </div>
           </div>
         </nav>
-      <nav class="navbar navbar-expand-lg  fixed-top" style="background-color: #2d33319f;">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000;">
          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -274,7 +267,7 @@
         }, 1000);
         
         </script>
-<p id="countDown"></p>
+<p class ="countDownStyle" id="countDown"></p>
         
     </div>
     <div class="col-md-4","fl">

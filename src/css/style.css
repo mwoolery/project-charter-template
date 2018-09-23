@@ -8,9 +8,37 @@ body {
   padding-top: 54px;
 }
 
+.backgroundNav{
+  /* background: url();   */
+  background-image: url(C:/Users/S531508/Downloads/Fall2018/GDP/project-charter-template/src/img/header_logo.PNG);
+  
+  /* background-image: url(C:/Users/S531508/Downloads/Fall2018/GDP/project-charter-template/src/img/navbg.PNG); */
+  /* background-color: rgba(240, 248, 255, 0.048); */
+  background-repeat: repeat-x;
+}
+
+ #nwlogo{
+  /* z-index: 50; */
+    /* width: 120px;
+    height: 10%; */
+     /* background: url(/images/header_logo.png);   */
+    position: absolute;
+    top: 0;
+    left: 0;  
+}  
+
+.countDownStyle {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  background-color: #006747;
+  color: white;
+}
+
 .imageqwe {
   max-width: 100%;
-  height: 525px ;
+  height: 535px ;
+
 }
 
 @media (min-width: 992px) {
@@ -22,16 +50,29 @@ body {
 .nav-link {
   color: white;
   font-size: small;
+  /* color: white; */
+  text-decoration: none;
+  /* font-family: bearcatbold_italic; */
+  /* font-size: 20px; */
+  /* text-transform: lowercase; */
+  padding: 0 24px;
+  line-height: 43px;
+  height: 42px;
+  display: block;
+  letter-spacing: 1.0px;
+  /* text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.007); */
 }
 
 .sec1{
-  background-color:rgb(109, 105, 105);
+  background-color: rgba(102, 98, 98, 0.945);
   position:relative;
-  color: white;
+  /* color:black; */
+  color:white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
 }
 .blink{
+  /* color:rgb(17, 16, 16); */
   color:white;
 }
 .mapouter
