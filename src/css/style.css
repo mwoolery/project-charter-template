@@ -110,7 +110,6 @@ text-align: right;
 .lis{
   list-style-type:none;
 }
-<<<<<<< HEAD
 #footer-props {
   background-color: rgb(255, 255, 255);
   margin-top: 20px
@@ -119,7 +118,7 @@ text-align: right;
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 30px;
-=======
+}
 .storyb img:hover{
   transform: scale(1.1);
   
@@ -130,5 +129,4 @@ text-align: right;
 }
 .storyb{
   overflow: hidden;
->>>>>>> a19e2df5e2591d2e92ad35749b37c99ee144bd17
 }
