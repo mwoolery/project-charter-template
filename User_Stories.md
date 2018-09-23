@@ -1,15 +1,15 @@
 # User Story of Navigation bar
-## As a user one can search all the northwest missouri websites and each attributes
-## User can access different categories like Admissions,Academics,Campus life etc
-## User can check about details about the opening of field house
-## User can access various elments like home to know basic details about the feildhouse 
-## As a user one can see the contact imformation like phonenumber, gmail, Mail address, Toll-free number
-## By cicking on the mail it opens the composed mail with sent email id of northwest on it
-## By clicking on the About in the navbar one can access GrandOpening, The Story, About the Facility
-## As a user by clicking on Giving one can access ways to Give, Online giving,Request Information,Founding 50.
-## In media we can access Construction Gallery, Renders Gallery, Webcam, Media Center.
-## On the home page by clicking on maps one can view the map 
-## By cicking on the view larger map it redirects to Google maps with desination location of fieldhouse
+## 1.As a user, I want to access the  Navigation bar , so that I can search all the northwest missouri websites and each attributes.
+## 2.As a User, I want to access Navigation bar, so that I can look at different categories like Admissions,Academics,Campus life etc.
+## 3.As a User, I want to access the Navigation bar, so that I  can check details about the opening of field house.
+## 4.As a User, I want to access the Navigation bar,so that I can access various elments like home to know basic details about the feildhouse. 
+## 5.As a user, I want to access the Navigation bar, so that I can see the contact imformation like phonenumber, gmail, Mail address, Toll-free number of the Field house representative.
+## 6.As a user, I want to cick on the mail, so that  it opens the composed mail with sent email id of northwest on it.
+## 7.As a user,I want to click on the About in the navigation bar, so that I can access GrandOpening, The Story, About the Facility of the Field house.
+## 8.As a user, I want to click on Giving tab, so that I can access ways to Give, Online giving,Request Information,Founding 50.
+## 9.As a user, I want to access media, so that we can access Construction Gallery, Renders Gallery, Webcam, Media Center.
+## 10.As a user, I want to access the maps on home page,so that I one can view the map. 
+## 11.As a user, I want to cick on the view larger map, so that  it redirects to Google maps with desination location of fieldhouse.
 
 #  User Story for Story-Board
 ## 1. As a user, I want to access the story-board to look at the grand opening of Hughes & Carl field house so that I can see the happenings from any where.
