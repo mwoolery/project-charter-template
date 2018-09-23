@@ -96,6 +96,23 @@ text-align: right;
   overflow: hidden
   
 }
+.sec2{
+  background-color:rgba(109, 105, 105,0.5);
+  border-radius:25px;
+  opacity:40px;
+  position:relative;
+  color: rgb(26, 25, 25);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  overflow: hidden;
+  height:200px;
+  width:350px;
+  
+}
 .blink{
   /* color:rgb(17, 16, 16); */
   color:white;
@@ -108,9 +125,16 @@ text-align: right;
  
 }
 .gmap_canvas {
+  border-radius:25px;
   overflow:hidden;
-  background:none!important;
-  height:220px;
+  background:none;
+  position:relative;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  overflow: hidden;
+  height:250px;
   width:350px;
  
 }
