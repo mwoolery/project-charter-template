@@ -161,3 +161,18 @@ text-align: right;
 .storyb{
   overflow: hidden;
 }
+.storytext{
+  text-align: center;
+  margin: 10px;
+  color: #ffffff;
+  
+  
+}
+.storyb a:hover {
+    text-decoration: none;
+}
+#story {
+  background-color: #006747;
+   padding-left: 10px; 
+   padding-right: 10px
+}
