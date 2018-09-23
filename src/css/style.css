@@ -10,20 +10,21 @@ body {
 
 .backgroundNav{
   /* background: url();   */
-  background-image: url(C:/Users/S531508/Downloads/Fall2018/GDP/project-charter-template/src/img/header_logo.PNG);
+  /* background-image: url(../img/header_logo.PNG); */
   
-  /* background-image: url(C:/Users/S531508/Downloads/Fall2018/GDP/project-charter-template/src/img/navbg.PNG); */
+  background-image: url(../img/navbg.PNG);
   /* background-color: rgba(240, 248, 255, 0.048); */
   background-repeat: repeat-x;
   position: absolute;
   padding-top: 0%;
   /* margin: 10; */
-margin-left: auto;
+/* margin-left: auto;
 margin-inline-start: auto;
 margin-inline-end: auto;
-/* padding: 14px 16px; */
+padding: 14px 16px; */
 top: 35px;
 width: 100%;
+text-align: right;
 }
 
 .nwnav1{
