@@ -6235,6 +6235,16 @@ button.bg-dark:focus {
 
 .d-inline-block {
   display: inline-block !important;
+
+
+}
+
+.logo {
+  display: block;
+  width: 114px;
+  height: 154px;
+  text-indent: -9999em;
+  overflow: hidden;
 }
 
 .d-block {
