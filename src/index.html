@@ -16,6 +16,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!--This line is required for the service worker to download the site to the homescreen-->
+    <link rel="manifest" href="/manifest.json">
     
   </head>
 
@@ -474,6 +477,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- This file is required to link to the service worker so it actually registers-->
   <script src="/register-service-worker.js" async></script>
 
 </body>
