@@ -1,14 +1,13 @@
 <template>
-  
+    <stories></stories>    
 </template>
 
 <script>
+import Stories from '@/components/Stories.vue'
 export default {
   name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Hughes FieldHouse'
-    }
+  components: {
+    Stories
   }
 }
 </script>

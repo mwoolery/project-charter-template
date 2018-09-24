@@ -1,12 +1,6 @@
 <template>
   <div id="app">
-    <header>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </header>
+    <navbar></navbar>
     <main>
       <router-view></router-view>
     </main>
@@ -14,8 +8,12 @@
 </template>
 
 <script>
+import Navbar from '@/components/Navbar.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Navbar
+  }
 }
 </script>
 
