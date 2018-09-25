@@ -48,9 +48,12 @@ text-align: right;
 .countDownStyle {
   text-align: center;
   font-size: 30px;
-  margin-top: 0px;
+  margin-top: 500px;
   background-color: #006747;
   color: white;
+  top: 25px;
+  position: absolute;
+  width: 96.15%;
 }
 
 .imageqwe {
