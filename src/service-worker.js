@@ -1,4 +1,4 @@
-var offlinePage = '/offline.html';
+const offlinePage = '/offline.html';
 
 var dataCacheName = 'HughesFHdataCache';
 var cacheName = 'HughesFHcache';
