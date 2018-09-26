@@ -1,3 +1,4 @@
+var offlinePage = '/offline.html';
 
 var dataCacheName = 'HughesFHdataCache';
 var cacheName = 'HughesFHcache';
@@ -15,7 +16,8 @@ var filesToCache = [
   '/img/5.PNG',
   '/img/nwlogo-white.png',
   '/img/NWemblem.PNG',
-  '/css/style.css'
+  '/css/style.css',
+  '/offline.html'
 
  
 
