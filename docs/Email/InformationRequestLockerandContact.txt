@@ -1,0 +1,23 @@
+From: Woolery,Matthew A 
+Sent: Friday, September 28, 2018 9:52 AM
+To: Hansen,Greg G <GHANSEN@nwmissouri.edu>; Byland,Brooke A <BBYLAND@nwmissouri.edu>
+Cc: Vankina,Satya Sai Ram <S531508@nwmissouri.edu>; Medarametla,Dattu Bhargav <S531439@nwmissouri.edu>; Tupakula,Vijay Kumar <S531507@nwmissouri.edu>; Guntuku,Girish <S531369@nwmissouri.edu>; Case,Denise M <DCASE@nwmissouri.edu>; Busireddy,Shivani <S531494@nwmissouri.edu>; Bommineni,Yashwanth Reddy <S531519@nwmissouri.edu>; Devineni,Sai Sirisha <S531367@nwmissouri.edu>; Gurudu,Saicharan <S531499@nwmissouri.edu>; Muchkur Bogarajula,Santosh Sekhar <S531503@nwmissouri.edu>; Vankina,Satya Sai Ram <S531508@nwmissouri.edu>
+Subject: Information for Contact Form and Lockers on Fieldhouse App
+
+Greg and Brooke,
+
+Hope you and your team are having a great Friday!  I’m reaching out to you today to get some information to put on the locker page and information that will be needed for the contact form.  We plan to begin working on these pages over the weekend and would like to know what information you think is important to appear on each one.  For the contact page, let us know what information you would specifically like from your potential clients when they are filling out the form. Right now we are thinking it might be something like below.
+
+Name: _______(text field/box)
+Reason for Contact: _________(dropdown box)
+Notes: ________(text area)
+Reservation Date ______(calendar select) 
+Reservation Time Start __ H  __ M
+Reservation Time Finish __ H  __ M
+
+After they fill it out it might send to a certain person on the team based on selection for reason of contact, such as field reservation might go to Greg and a general inquiry might go to the GA desk.
+Let me know what you think should be on these and as usual let me know if you have any questions that you need me to answer for clarification.
+
+Thanks,
+
+Matt Woolery
