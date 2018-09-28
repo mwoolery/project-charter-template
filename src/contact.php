@@ -4,7 +4,7 @@
   $message = $_POST['message'];
 ?>
 <?php
-	$email_from = 'yourname@yourwebsite.com';
+	$email_from = 'mwoolery@nwmissouri.edu';
 
 	$email_subject = "New Form submission";
 
@@ -13,7 +13,7 @@
 ?>
 <?php
 
-  $to = "yourname@yourwebsite.com";
+  $to = "mwoolery@nwmissouri.edu";
 
   $headers = "From: $email_from \r\n";
 
