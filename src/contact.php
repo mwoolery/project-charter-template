@@ -1,7 +1,8 @@
 <?php
-  $name = $_POST['name'];
-  $visitor_email = $_POST['email'];
-  $message = $_POST['message'];
+
+$_SESSION['name'] = isset($_POST['name']) ? $_POST['name'] : "";
+$_SESSION['email'] = isset($_POST['email']) ? $_POST['email'] : "";
+$_SESSION['message'] = isset($_POST['message']) ? $_POST['message'] : "";
 
 
 
