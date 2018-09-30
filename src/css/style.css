@@ -26,13 +26,17 @@ top: 35px;
 width: 100%;
 text-align: right;
 }
-
+.backgroundcss{
+  background-color: #ffffff;
+}
 .nwnav1{
     float: left;
     /* width: 960px; */
     padding-left: 18px;
     height: 35px;
     position: absolute;
+    background-color: #ffffff;
+    color: white;
 }
 
  #nwlogo{
@@ -55,6 +59,17 @@ text-align: right;
   position: absolute;
   width: 96.15%;
 }}
+@media ( max-width : 992px) {
+  .countDownStyle {
+    text-align: center;
+    font-size: 30px;
+    margin-top: -45px;
+    background-color: #006747;
+    color: white;
+    top: 25px;
+    position: relative;
+    width:100%;
+  }}
 @media (min-width: 992px) {
 .imageqwe {
   max-width: 100%;
