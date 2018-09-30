@@ -204,3 +204,8 @@ text-align: right;
    padding-left: 10px; 
    padding-right: 10px
 }
+
+.text-center {
+  margin-bottom: 50px;
+  color:black;
+}
