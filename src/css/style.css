@@ -7,7 +7,31 @@
 body {
   padding-top: 54px;
 }
-
+.navlogo{
+  z-index: 100;
+  width: 90px;
+  height: 108px;
+  /* background: url(/images/header_logo.png); */
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+@media (max-width: 500px) {
+.navlogo{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  /* visibility: hidden; */
+}
+}
+@media (max-width: 500px) {
+  .smaller{
+    /* visibility: hidden; */
+    position: absolute;
+    right: 150px;
+    top: 8px;
+  }
+  }
 .backgroundNav{
   /* background: url();   */
   /* background-image: url(../img/header_logo.PNG); */
@@ -24,15 +48,35 @@ margin-inline-end: auto;
 padding: 14px 16px; */
 top: 35px;
 width: 100%;
-text-align: right;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
 
+.backgroundcss{
+  background-color: #ffffff;
+}
+@media (max-width: 500px) {
+.collapseBackground {
+  /* background-color: #006747; */
+  z-index : 800;
+  background-image: url(../img/campusbg5.PNG);
+  text-align: center;
+  /* color: black; */
+}
+/* .navbar-dark .navbar-nav .active{
+  color: black;
+} */
+}
 .nwnav1{
     float: left;
     /* width: 960px; */
     padding-left: 18px;
     height: 35px;
     position: absolute;
+    background-color: #ffffff;
+    color: white;
 }
 
  #nwlogo{
@@ -55,6 +99,17 @@ text-align: right;
   position: absolute;
   width: 96.15%;
 }}
+@media ( max-width : 992px) {
+  .countDownStyle {
+    text-align: center;
+    font-size: 30px;
+    margin-top: -45px;
+    background-color: #006747;
+    color: white;
+    top: 25px;
+    position: relative;
+    width:100%;
+  }}
 @media (min-width: 992px) {
 .imageqwe {
   max-width: 100%;
@@ -81,6 +136,7 @@ text-align: right;
   height: 42px;
   display: block;
   letter-spacing: 1.0px;
+  text-align: left;
   /* text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.007); */
 }
 
@@ -153,6 +209,15 @@ text-align: right;
   margin-bottom: 30px;
   margin-top: 30px;
 }
+.discover{
+  text-align: center;
+  background: #175840;
+  color: aqua;
+  margin-bottom: 30px;
+  font-family: cursive;
+  
+
+}
 .storyb img:hover{
   transform: scale(1.1);
   
@@ -168,6 +233,7 @@ text-align: right;
   text-align: center;
   margin: 10px;
   color: #ffffff;
+  font-size: 15px
   
   
 }
@@ -178,4 +244,9 @@ text-align: right;
   background-color: #006747;
    padding-left: 10px; 
    padding-right: 10px
+}
+
+.text-center {
+  margin-bottom: 50px;
+  color:black;
 }
