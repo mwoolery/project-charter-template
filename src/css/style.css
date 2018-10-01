@@ -78,7 +78,16 @@ width: 100%;
     background-color: #ffffff;
     color: white;
 }
+.field{
+  padding: 10px;
 
+}
+
+.bg{
+  padding:10px;
+  background-image: url(../img/bggg.png);
+  border-radius: 10px;
+  
  #nwlogo{
   /* z-index: 50; */
     /* width: 120px;
