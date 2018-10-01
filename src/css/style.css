@@ -57,17 +57,17 @@ width: 100%;
 .backgroundcss{
   background-color: #ffffff;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 .collapseBackground {
   /* background-color: #006747; */
   z-index : 800;
   background-image: url(../img/campusbg5.PNG);
-  text-align: center;
+  text-align: right;
   /* color: black; */
 }
-/* .navbar-dark .navbar-nav .active{
+.navbar-dark .navbar-nav .active{
   color: black;
-} */
+}
 }
 .nwnav1{
     float: left;
