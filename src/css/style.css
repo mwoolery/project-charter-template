@@ -185,25 +185,29 @@ width: 100%;
   /* color:rgb(17, 16, 16); */
   color:white;
 }
-.mapouter
-{
-  text-align:right;
-  height:220px;
-  width:350px;
- 
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
-.gmap_canvas {
-  border-radius:25px;
+
+.map-responsive {
+  /* border-radius:25px;
   overflow:hidden;
   background:none;
-  position:relative;
+  position:absolute;
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
-  overflow: hidden;
   height:250px;
-  width:350px;
+  width:350px; */
+  overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
  
 }
 .lis{
