@@ -237,49 +237,61 @@
     
     </script>>
     
-<div class="row" >
     <h1>Contact Form</h1>
-    <!--Contact Form can be placed inside here-->
-    <div class="col-md-12">
-      <form action="" method="post" id = "contactform">
-        Name: <input type="text" name="name"><br>
-        Email: <input type="text" name="name"><br>
-          
-          <select id="selectMe">
-              <option value="">Select a Contact Form</option>
-              <option value="content_1">General Inquiry</option>
-              <option value="content_2">Field Reservation</option>
-              <option value="content_3">Complaint</option>
-              <option value="content_4">Other</option>
-          </select>
-          <div id="content_1" class="group">
-            <h4>General Inquiry</h4>
-            <textarea name="message" rows="10" cols="30">Enter in your general inquiry.
-                </textarea>
-          </div>
-          <div id="content_2" class="group">
-              Time Start: <input type="text" name="name">HH
-               &nbsp;<input type="text" name="name">MM<br>
-               Time Finish: <input type="text" name="name">HH
-               &nbsp;<input type="text" name="name">MM<br>
-              <textarea name="message" rows="10" cols="30">Enter in any notes about your reservation
-                  </textarea>
-          </div>
-          <div id="content_3" class="group">
-              <textarea name="message" rows="10" cols="30"> Enter your complaint
-                  </textarea>
-          </div>
-          <div id="content_4" class="group">
-              <textarea name="message" rows="10" cols="30">Enter your other message for the Fieldhouse Team.
-                  </textarea>
-          </div>
-        </form>
-        <button type="submit" form="contactform" value="Submit">Submit</button>
+    <div class="row" >
+        <div class="col-md-3"></div>
+        <!--Contact Form can be placed inside here-->
+        <div class="col-md-6 bg">
+          <form class="field" action="" method="post" id = "contactform" >
+            Name: <input type="text" name="name">
+          <br>
+          <br>
+            Email: <input type="text" name="name">
+          <br>
+          <br>
+              <select id="selectMe">
+                  <option value="">Select a Contact Form</option>
+                  <option value="content_1">General Inquiry</option>
+                  <option value="content_2">Field Reservation</option>
+                  <option value="content_3">Complaint</option>
+                  <option value="content_4">Other</option>
+              </select>
+              <br>
+              <br>
+              <div id="content_1" class="group">
+                <h4>General Inquiry</h4>
+                <textarea name="message" rows="10" cols="30">Enter in your general inquiry.
+                    </textarea>
+              </div>
+              <br>
+              
+              <div id="content_2" class="group">
+                  Time Start: <input type="text" name="name">HH
+                   &nbsp;<input type="text" name="name">MM<br>
+                   Time Finish: <input type="text" name="name">HH
+                   &nbsp;<input type="text" name="name">MM<br>
+                  <textarea name="message" rows="10" cols="30">Enter in any notes about your reservation
+                      </textarea>
+              </div>
+              
+              <br>
+              <div id="content_3" class="group">
+                  <textarea name="message" rows="10" cols="30"> Enter your complaint
+                      </textarea>
+              </div>
+              
+              <div id="content_4" class="group">
+                  <textarea name="message" rows="10" cols="30">Enter your other message for the Fieldhouse Team.
+                      </textarea>
+              </div>
+             
+            </form>
+            <button type="submit" form="contactform" value="Submit">Submit</button>
+            
+        </div>
         
+        <div class="col-md-3"></div>
     </div>
-    
-    
-</div>
 
 
 
