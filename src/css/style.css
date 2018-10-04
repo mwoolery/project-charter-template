@@ -21,6 +21,7 @@ body {
   position: absolute;
   width: 45px;
   height: 45px;
+  left: 2px;
   /* visibility: hidden; */
 }
 }
@@ -28,7 +29,7 @@ body {
   .smaller{
     /* visibility: hidden; */
     position: absolute;
-    right: 150px;
+    right: 120px;
     top: 8px;
   }
   }
