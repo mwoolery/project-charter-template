@@ -213,10 +213,12 @@ width: 100%;
   background: #175840;
   color: aqua;
   margin-bottom: 30px;
-  font-family: cursive;
-  
+  font-family: sans-serif;
+  border-radius: 20px;
 
 }
+
+
 .storyb img:hover{
   transform: scale(1.1);
   
@@ -224,6 +226,8 @@ width: 100%;
 .storyb img{
   transition: all 0.3s ease 0s;
   width: 100%;
+  border-radius: 10px;
+  
 }
 .storyb{
   overflow: hidden;
@@ -244,6 +248,7 @@ width: 100%;
    padding-left: 10px; 
    padding-right: 10px;
    margin-top: 60px;
+   border-radius: 20px;
 }
 
 .text-center {
