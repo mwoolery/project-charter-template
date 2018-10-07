@@ -300,7 +300,7 @@
         </div>
 
         <br>
-        <script>
+        <!-- <script>
 
           var countDownDate = new Date("Oct 12, 2018 16:00:25").getTime();
           var x = setInterval(function () {
@@ -319,8 +319,8 @@
             }
           }, 1000);
 
-        </script>
-        <p class="countDownStyle" id="countDown"></p>
+        </script> -->
+        <p class="countDownStyle" id="countDown" $(window).load(countDownfunc()></p>
 
       </div>
       <div class="col-md-4">
@@ -528,6 +528,11 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- countDown script file -->
+  <script src="countDown.js"></script>
+  <script>
+    countDownfunc()
+  </script>
   <!-- This file is required to link to the service worker so it actually registers-->
   <script src="/register-service-worker.js" async></script>
 
