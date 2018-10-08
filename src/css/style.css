@@ -124,9 +124,13 @@ width: 100%;
   }
 }
 
-.nav-link {
+/* ul#nwMenu a.az {
+  width: 49px;
+  background-position: -709px top;
+} */
+ul .nav-link {
   color: white;
-  font-size: medium;
+  font-size: small;
   /* color: white; */
   text-decoration: none;
   padding: 0 24px;
