@@ -29,3 +29,5 @@ Hours for the Facility (Community Walk M-F 6a - 1pm and 7pm to close) (Athletics
 Reserve a meeting room needs to be changed to Explore a meeting room and also include field, show pictures to represent the experience.
 Change the Floor Plans to a link to Giving a donation.
 Overall, site needs picture update which can be gathered from Flickr
+Add Facebook, Twitter, Instagram
+Fieldhouse is 1 word 
