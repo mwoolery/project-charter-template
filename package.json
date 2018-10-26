@@ -1,0 +1,22 @@
+{
+  "name": "project-charter-template",
+  "version": "1.0.0",
+  "description": "[Template for a Project Charter](https://github.com/vijaythecoder/project-charter-template).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijaythecoder/project-charter-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijaythecoder/project-charter-template/issues"
+  },
+  "homepage": "https://github.com/vijaythecoder/project-charter-template#readme"
+}
