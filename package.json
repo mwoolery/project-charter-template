@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/vijaythecoder/project-charter-template/issues"
   },
-  "homepage": "https://github.com/vijaythecoder/project-charter-template#readme"
+  "homepage": "https://github.com/vijaythecoder/project-charter-template#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
