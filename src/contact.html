@@ -240,14 +240,20 @@
     <h1>Contact Form</h1>
     <div class="row" >
         <div class="col-md-3"></div>
+        <div class = "col-md-5" >
         <!--Contact Form can be placed inside here-->
-        <div class="col-md-6 bg">
-          <form class="field" action="" method="post" id = "contactform" >
-            Name: <input type="text" name="name">
-          <br>
-          <br>
-            Email: <input type="text" name="email">
-          <br>
+        <form  action="mailto:saivankina@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="nameId">Name</label>
+                <input type="text" class="form-control" id="nameId" aria-describedby="emailHelp" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+            <label for="mailId">Email address</label>
+            <input type="email" class="form-control" id="mailId" aria-describedby="emailHelp" placeholder="Enter email">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            
           <br>
               <select name="selectMe" id="selectMe">
                   <option value="">Select a Contact Form</option>
@@ -260,37 +266,55 @@
               <br>
               <div id="content_1" class="group">
                 <h4>General Inquiry</h4>
-                <textarea name="message" rows="10" cols="30">Enter in your general inquiry.
-                    </textarea>
+                <label>Enter in your general inquiry.</label>
+                <textarea name="message" rows="10" cols="60"></textarea>
               </div>
               <br>
               
               <div id="content_2" class="group">
-                  Time Start: <input type="text" name="name">HH
-                   &nbsp;<input type="text" name="name">MM<br>
-                   Time Finish: <input type="text" name="name">HH
-                   &nbsp;<input type="text" name="name">MM<br>
-                  <textarea name="message" rows="10" cols="30">Enter in any notes about your reservation
-                      </textarea>
-              </div>
-              
-              <br>
+
+              Start Date : 
+              <input type="date" name="Start Date" max="2100-12-31">
+              Start Time : 
+              <input type="time" name="Start Time"><br><br>
+              End Date : 
+              <input type="date" name="End Date" min="2018-10-28">
+              End Time : 
+              <input type="time" name="End Time"><br><br>
+              <label for="field">Enter in any notes about your reservation</label>      
+              <textarea name="message" rows="10" cols="60" id= "field" placeholder=""></textarea>
+              </div><br>
+
               <div id="content_3" class="group">
-                  <textarea name="message" rows="10" cols="30"> Enter your complaint
-                      </textarea>
+                  <label >Enter your complaint</label>
+                  <textarea name="message" rows="10" cols="60" placeholder=""></textarea>
               </div>
               
               <div id="content_4" class="group">
-                  <textarea name="message" rows="10" cols="30">Enter your other message for the Fieldhouse Team.
+                  <label >Enter your other message for the Fieldhouse Team.</label>
+                  <textarea name="message" rows="10" cols="60" placeholder="">
                       </textarea>
               </div>
-             
+
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Above Information is Legitimate</label>
+              </div>
+              <button type="submit" value = "send" class="btn btn-primary">Submit</button>
+    </div>
+
+              <!-- <div>
+                <a class="text-link" href="mailto:s531508@nwmissouri.edu">
+               <label type="text" >Contact us</label>
+                </a>
+             </div>  -->
+
             </form>
-            <button type="submit" form="contactform" value="Submit">Submit</button>
+            <!-- <button type="submit" form="contactform" value="Submit">Submit</button> -->
             
         </div>
         
-        <div class="col-md-3"></div>
+        <div class="col-md-4"></div>
     </div>
 
 
