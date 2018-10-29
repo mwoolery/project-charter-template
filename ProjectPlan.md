@@ -60,6 +60,7 @@ List your user stories (with supporting images & data) in a numbered, prioritize
 - As a User, I want to see the map box on the home page of the Hughes Fieldhouse.
 - As a User, I want to view a grid of images that helps navigate to each functional     area of the app.
 - As a member of the Marketing Team, I want to ensure that the design reflects the Northwest brand.
+
 ### MVP 2 (Fri-19-Oct)
 
 - As a user, I want to contact the persons involved in case of any inquiry regarding the events being conducted.
@@ -67,13 +68,16 @@ List your user stories (with supporting images & data) in a numbered, prioritize
 - As a user, I want to click on the stories on the storyboard so that I will be redirected to the page related to that(clicked) story. 
 - As a user, I want to find information about the lockers by clicking on the lockers image on the storyboard.
 - As a user, I want to make a reservation at the Hughes Fieldhouse for an event by clicking on the event reservation story on the storyboard.
+
 ### MVP 3 (Fri-9-Nov)
 
 - As a user, I want to click on the map, so that I can get the directions to the Field House from my current location.
 - As a user, I want to see the floor plan of the Fieldhouse, So that I can understand the internal navigation of the building. 
 - As a user, I want to view form by clicking on the event reservation story on the storyboard and fill the form to reserve Hughes Fieldhouse for an event.
 - As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
-GDP 2
+- As a user, I want to see the announcement banner when I open the website/home page.
+
+###GDP 2
 
 - As a user, I want to see the number of people who have viewed the page.
 - As a user, I want to have a live chat session to inquire about the page.
