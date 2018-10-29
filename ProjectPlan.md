@@ -77,6 +77,7 @@ List your user stories (with supporting images & data) in a numbered, prioritize
 - As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
 - As a user, I want to see the announcement banner when I open the website/home page.
 
+
 ###GDP 2
 
 - As a user, I want to see the number of people who have viewed the page.
