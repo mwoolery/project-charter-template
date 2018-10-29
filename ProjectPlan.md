@@ -77,6 +77,9 @@ List your user stories (with supporting images & data) in a numbered, prioritize
 - As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
 - As a user, I want to see the announcement banner when I open the website/home page.
 
+- As a user, I want to click on the contact number in the contact info, so that I can call the responsible person.
+- As a user, I want to click on the email link, so that I will be navigated directly to the send email to the contact person.
+
 ###GDP 2
 
 - As a user, I want to see the number of people who have viewed the page.
