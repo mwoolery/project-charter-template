@@ -88,7 +88,7 @@ Deferred
 
 - As a user, I want to view the parking map of Hughes Fieldhouse.
 - As a user, I want to view the 360° view of the Hughes Fieldhouse.
- 
+
 
 ### Team Roles
 
