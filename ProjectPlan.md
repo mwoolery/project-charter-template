@@ -73,7 +73,10 @@ List your user stories (with supporting images & data) in a numbered, prioritize
 - As a user, I want to see the floor plan of the Fieldhouse, So that I can understand the internal navigation of the building. 
 - As a user, I want to view form by clicking on the event reservation story on the storyboard and fill the form to reserve Hughes Fieldhouse for an event.
 - As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
-GDP 2
+- As a user, I want to click on the contact number in the contact info, so that I can call the responsible person.
+- As a user, I want to click on the email link, so that I will be navigated directly to the send email to the contact person.
+
+##GDP 2
 
 - As a user, I want to see the number of people who have viewed the page.
 - As a user, I want to have a live chat session to inquire about the page.
@@ -84,7 +87,7 @@ Deferred
 
 - As a user, I want to view the parking map of Hughes Fieldhouse.
 - As a user, I want to view the 360° view of the Hughes Fieldhouse.
- 
+
 
 ### Team Roles
 
