@@ -74,7 +74,7 @@ List your user stories (with supporting images & data) in a numbered, prioritize
 - As a user, I want to click on the map, so that I can get the directions to the Field House from my current location.
 - As a user, I want to see the floor plan of the Fieldhouse, So that I can understand the internal navigation of the building. 
 - As a user, I want to view form by clicking on the event reservation story on the storyboard and fill the form to reserve Hughes Fieldhouse for an event.
-- As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
+- (Yashwanth Reddy Bommineni) As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
 - As a user, I want to see the announcement banner when I open the website/home page.
 
 - As a user, I want to click on the contact number in the contact info, so that I can call the responsible person.
