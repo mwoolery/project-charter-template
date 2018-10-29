@@ -46,18 +46,19 @@ Astra Event List: https://www.aaiscloud.com/NWMOStateU/events/EventList.aspx (Li
 
 ### MVP 2 (Fri-19-Oct)
 
-1. As a user, I want to contact the persons involved in case of any inquiry regarding the events being conducted.
+1. As a user, I want to contact the persons involved in case of any inquiry regarding the events being conducted with a contact form.
 2. As a user, I want to click on the map in the homepage and view the location of the Hughes Fieldhouse.
 3. As a user, I want to click on the stories on the storyboard so that I will be redirected to the page related to that(clicked) story. 
 4. As a user, I want to find information about the lockers by clicking on the lockers image on the storyboard.
-5. As a user, I want to make a reservation at the Hughes Fieldhouse for an event by clicking on the event reservation story on the storyboard.
+5. As a user, I want to find the information that I need to have to know about the facility and have access to contact information so I can contact the fieldhouse to possibly make a reservation.
 
 ### MVP 3 (Fri-9-Nov)
 
 1. As a user, I want to click on the map, so that I can get the directions to the Field House from my current location.
-2. As a user, I want to see the floor plan of the Fieldhouse, So that I can understand the internal navigation of the building. 
-3. As a user, I want to view form by clicking on the event reservation story on the storyboard and fill the form to reserve Hughes Fieldhouse for an event.
-4. As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
+2. As a user, I want to "Experience the Facility" by viewing photos and information about the facility to decide if I want to use it for my venue.
+3. As a user, I want to see the twitter/Facebook/Instagram feed on the home page in order to check out recent happenings.
+4. As a Hughes Fieldhouse team user, I want to be able to use Google Analytics and understand page insights.
+5. As a user, I would like to easily find information about donating to the Fieldhouse/University, especially finding out how I can purchase a brick that can be placed outside the fieldhouse.
 
 ## Team Roles
 
