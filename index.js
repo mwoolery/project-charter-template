@@ -8,7 +8,7 @@ const _port = 3000
 
 var app = express();
 
-app.use(express.static(path.join(__dirname, '/..', './src')));
+app.use(express.static(__dirname + '/src/'));
 
 app.get('/', function(req, res){
     res.sendFile('./src/index.html',{root: __dirname});
