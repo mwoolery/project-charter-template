@@ -9,10 +9,15 @@ var route = require('./controllers/route');
 
 var app = express();
 
+<<<<<<< HEAD:app.js
 app.set('view engine', 'ejs');
+=======
+app.use(express.static(__dirname + '/src/'));
+>>>>>>> d4a3c9ddb4b85724bff2f0b9d6d722ca8dc1aa35:index.js
 
 app.use(express.static('./views'));
 
+<<<<<<< HEAD:app.js
 route(app);
 
 app.listen(3000);
@@ -24,6 +29,9 @@ app.listen(3000);
 // })
 
 // app.listen(_port, function() { console.log('listening port '+_port+"\n__dirname : "+__dirname)});
+=======
+app.listen(process.env.PORT );
+>>>>>>> d4a3c9ddb4b85724bff2f0b9d6d722ca8dc1aa35:index.js
 
 var api_key = '34ee4881c993f9cbbb157c7005263e39-4836d8f5-93b1e7a3';
 var domain = 'https://app.mailgun.com/app/domains/sandboxa16b182489814caba2256e4c4d40ecda.mailgun.org';
