@@ -1,20 +1,29 @@
 //export used
-var express = require('express'),
-    url = require("url"),  
-    path = require("path"),  
-    fs = require("fs");
+var express = require('express');
+var route = require('./controllers/route');
+    // url = require("url"),  
+    // path = require("path"),  
+    // fs = require("fs");
 
-const _port = 3000
+// const _port = 3000
 
 var app = express();
 
-app.use(express.static(path.join(__dirname, '/..', './src')));
+app.set('view engine', 'ejs');
 
-app.get('/', function(req, res){
-    res.sendFile('./src/index.html',{root: __dirname});
-})
+app.use(express.static('./views'));
 
-app.listen(_port, function() { console.log('listening port '+_port+"\n__dirname : "+__dirname)});
+route(app);
+
+app.listen(3000);
+
+// app.use(express.static(path.join(__dirname, '/..', './src')));
+
+// app.get('/', function(req, res){
+//     res.sendFile('./src/index.html',{root: __dirname});
+// })
+
+// app.listen(_port, function() { console.log('listening port '+_port+"\n__dirname : "+__dirname)});
 
 var api_key = '34ee4881c993f9cbbb157c7005263e39-4836d8f5-93b1e7a3';
 var domain = 'https://app.mailgun.com/app/domains/sandboxa16b182489814caba2256e4c4d40ecda.mailgun.org';
