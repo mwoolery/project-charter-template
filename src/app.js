@@ -1,6 +1,15 @@
 const express = require('express')
-const app = express()
-const port = 3000
+
+var express = require('express'),
+    url = require("url"),  
+    path = require("path"),  
+    fs = require("fs");
+
+const _port = 3000
+
+var app = express();
+
+
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
