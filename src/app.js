@@ -16,9 +16,6 @@ console.log("process.cwd " + process.cwd());
 app.set("views", path.resolve(__dirname, "views"));
 app.set('view engine', 'ejs');
 
-app.get('/', function(req, res) {
-    res.render('views/index');
-});
 
 var route = require('./controllers/route');
 route(app)
