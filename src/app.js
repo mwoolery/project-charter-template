@@ -8,4 +8,6 @@ app.set('view engine', 'ejs');
 var route = require('./controllers/route');
 route(app)
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+
+app.listen(process.env.port, () => console.log(`Example app listening on port ${port}!`))
