@@ -2,13 +2,13 @@
   "name": "project-charter-template",
   "version": "1.0.0",
   "description": "[Template for a Project Charter](https://github.com/vijaythecoder/project-charter-template).",
-  "main": "index.js",
+  "main": "src/app.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
