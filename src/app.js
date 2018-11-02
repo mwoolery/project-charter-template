@@ -10,6 +10,9 @@ var app = express();
 
 // use views from view folder and use ejs
 //app.use(express.static('public'));
+console.log("__dirname " + __dirname);
+console.log("process.cwd " + process.cwd());
+
 app.set("views", path.resolve(__dirname, "views"));
 app.set('view engine', 'ejs');
 
