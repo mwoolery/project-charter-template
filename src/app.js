@@ -3,7 +3,7 @@ var express = require('express'),
     path = require("path"),  
     fs = require("fs");
 
-const _port = 3000
+var port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -21,4 +21,4 @@ var route = require('./controllers/route');
 route(app)
 
 
-app.listen(process.env.port)
+app.listen(process.env.PORT)
