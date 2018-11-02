@@ -22,7 +22,7 @@
   "homepage": "https://github.com/vijaythecoder/project-charter-template#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "mailgun-js": "^0.22.0"
+    "ejs": "latest"
   },
   "keywords": [],
   "devDependencies": {}
