@@ -7,9 +7,6 @@ var port = process.env.PORT || 3000;
 
 var app = express();
 
-
-
-
 app.set("views", path.resolve(__dirname, "views"));
 app.set('view engine', 'ejs');
 
@@ -20,4 +17,5 @@ var route = require('./controllers/route');
 route(app)
 
 
-app.listen(process.env.PORT)
+app.listen(port)
+console.log("you are listening to port 3000")
