@@ -21,6 +21,8 @@
   <!--This line is required for the service worker to download the site to the homescreen-->
   <link rel="manifest" href="/manifest.json">
 
+  
+
 </head>
 
 <body background="img\campusbg.PNG">
@@ -276,7 +278,9 @@
           <center>Today's events</center>
         
           <iframe src='https://www.aaiscloud.com/NWMOStateU/Calendars/ActivityCalendar.aspx?calendarId=1f100ed0-c7f9-11e8-8b07-e5af6baab4cb'
-          style='margin:0'
+          style='margin:0;
+            background-image: url("/Includes/Site/images/AjaxLoader.gif");   
+            background-repeat: no-repeat;'
           width='100%' height='600px'>
           <p>Your browser does not support iframes.</p>
           </iframe>
