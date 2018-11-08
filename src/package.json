@@ -29,7 +29,15 @@
         "bootstrap": "4.1.1",
         "ejs": "^2.6.1",
         "express": "^4.16.4",
-        "jquery": "3.3.1"
+        "jquery": "3.3.1",
+        "lodash": "latest",
+        "lodash.find": "latest",
+        "lodash.findindex": "latest",
+        "lodash.remove": "latest",
+        "method-override": "latest",
+        "mongoose": "latest",
+        "nedb": "latest"
+        
     },
     "devDependencies": {
         "browser-sync": "2.24.5",
