@@ -48,6 +48,7 @@ route(app)
 app.post("/contact", function (req, res) {
     const name = req.body.inputname;
     const email = req.body.inputemail;
+    const reason = req.body.inputreason;
     const company = req.body.inputcompany;
     const comment = req.body.inputcomment;
     // const name = "Matt Woolery";
@@ -56,7 +57,7 @@ app.post("/contact", function (req, res) {
     // const comment = "testing";
   
     // logs to the terminal window (not the browser)
-    const str ='\nCONTACT FORM DATA: ' + name + ' ' + email + ' ' + company + ' ' + comment + '\n'
+    const str ='\nContact Form Entry from: ' + name + '\n Contact Email: ' + email + '\n Reason for Contact: '+ reason + '\n Company:' + company + '\n Comment: ' + comment + '\n'
     console.log(str)
   
     const mailOptions = {

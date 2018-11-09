@@ -310,12 +310,14 @@
               </div>
             </div>
           </div>
+
+          
       
           <!-- Form group for email -->
       
           <div class="form-group">
-            <label class="col-md-4 control-label">E-Mail</label>
-            <div class="col-md-4 inputGroupContainer">
+            <label class="col-md-8 control-label">E-Mail</label>
+            <div class="col-md-8 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                 <input name="inputemail" placeholder="Email address" class="form-control" type="email" maxlength="80"
@@ -324,6 +326,21 @@
             </div>
           </div>
       
+          <div class="form-group">
+            <label class="col-md-8 control-label">Reason for Contact</label>
+            <div class="col-md-8 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <select name="inputreason"placeholder="General Inquiry"class="form-control" required value="">
+                  <option value="">Select a Contact Form</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Field Reservation">Field Reservation</option>
+                  <option value="Complaint">Complaint</option>
+                  <option value="Other">Other</option>
+              </select>
+              </div>
+            </div>
+          </div>
           <!-- Form group for company name -->
       
           <div class="form-group" id="company-group">
