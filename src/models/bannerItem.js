@@ -13,4 +13,4 @@ var BannerItemSchema = new Schema({
 })
 
 var bannerItem = mongoose.model('BannerItem', BannerItemSchema)
-module.exports = BannerItem
+//module.exports = BannerItem

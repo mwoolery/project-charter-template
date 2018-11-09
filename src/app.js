@@ -4,6 +4,7 @@ var express = require('express'),
     fs = require("fs");
 
 const bodyParser = require("body-parser")
+const expressLayouts = require('express-ejs-layouts');
 var port = process.env.PORT || 3000;
 const mgconfig = (process.env.NODE_ENV === "production") ? {} : require('./config.json') 
 const api_key = process.env.MAILGUN_API_KEY || mgconfig.MAILGUN_API_KEY
@@ -13,9 +14,9 @@ const mailgun = require('mailgun-js')({ apiKey: api_key, domain: DOMAIN })
 console.log(api_key);
 console.log(DOMAIN);
 //Database set up in code block below
-//const Datastore = require('nedb');
-//var db = new Datastore();
-//db.loadDatabase();
+const Datastore = require('nedb');
+var db = new Datastore();
+db.loadDatabase();
 
 
 
@@ -27,17 +28,18 @@ app.set("views", path.resolve(__dirname, "views"));
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public/'));
-
+app.use(expressLayouts);
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
 //set up seed data
-//var bannerItems = require('./data/banneritem.json');
-//db.insert(bannerItems);
-//app.locals.bannerItems = db.find(bannerItems);
-//console.log(Object.keys(bannerItems).length+ " bannerItems");
-//app.use('/banneritem', require('./controllers/banneritem.js'));
+var BannerItems = require('./data/banneritem.json');
+db.insert(BannerItems);
+app.locals.BannerItems = db.find(BannerItems);
+console.log(Object.keys(BannerItems).length+ " BannerItems");
+console.log(BannerItems);
+app.use('/banneritem', require('./controllers/banneritem.js'));
 
 
 var route = require('./controllers/route');
