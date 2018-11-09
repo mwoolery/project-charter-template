@@ -12,5 +12,5 @@ var BannerItemSchema = new Schema({
     endDate: { type: Date, required: true}
 })
 
-var bannerItem = mongoose.model('BannerItem', BannerItemSchema)
-//module.exports = BannerItem
+var bannerItem = mongoose.model('BannerItems', BannerItemSchema)
+

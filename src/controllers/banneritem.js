@@ -16,14 +16,14 @@ const notfoundstring = 'No such aggregate material';
 
 api.get('/findall', function(req, res){
     res.setHeader('Content-Type', 'application/json');
-    var data = req.app.locals.bannerItems.query;
+    var data = req.app.locals.BannerItems.query;
     res.send(JSON.stringify(data));
 });
 
 api.get('/findone/:id', function(req, res){
      res.setHeader('Content-Type', 'application/json');
     var id = parseInt(req.params.id);
-    var data = req.app.locals.bannerItems.query;
+    var data = req.app.locals.BannerItems.query;
     var item = find(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     res.send(JSON.stringify(item));
@@ -46,7 +46,7 @@ api.get("/create", function(req, res) {
 api.get('/delete/:id', function(req, res) {
     console.log("Handling GET /delete/:id " + req);
     var id = parseInt(req.params.id);
-    var data = req.app.locals.bannerItems.query;
+    var data = req.app.locals.BannerItems.query;
     var item = find(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     console.log("RETURNING VIEW FOR" + JSON.stringify(item));
@@ -62,7 +62,7 @@ api.get('/delete/:id', function(req, res) {
 api.get('/details/:id', function(req, res) {
     console.log("Handling GET /details/:id " + req);
     var id = parseInt(req.params.id);
-    var data = req.app.locals.bannerItems.query;
+    var data = req.app.locals.BannerItems.query;
     var item = find(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     console.log("RETURNING VIEW FOR" + JSON.stringify(item));
@@ -78,7 +78,7 @@ api.get('/details/:id', function(req, res) {
 api.get('/edit/:id', function(req, res) {
     console.log("Handling GET /edit/:id " + req);
     var id = parseInt(req.params.id);
-    var data = req.app.locals.bannerItems.query;
+    var data = req.app.locals.BannerItems.query;
     var item = find(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     console.log("RETURNING VIEW FOR" + JSON.stringify(item));
@@ -90,4 +90,45 @@ api.get('/edit/:id', function(req, res) {
         });
 });
 
+
+// HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
+
+// POST new
+/**
+ * adding a new item
+ */
+
+// POST new
+api.post('/save', function(req, res) {
+    console.log("Handling POST " + req);
+    var data = req.app.locals.BannerItems.query;
+    var item = new Model;
+    console.log("NEW ID " + req.body._id);
+    item._id = parseInt(req.body._id);
+    item.description = req.body.description;
+    item.startDate = req.body.startDate;
+    item.endDate = req.body.endDate;
+    data.push(item);
+    console.log("SAVING NEW ITEM " + JSON.stringify(item));
+    return res.redirect('/banneritem');
+});
+
+
+//update
+
+api.post('/save/:id', function(req, res) {
+    console.log("Handling SAVE request" + req);
+    var id = parseInt(req.params.id);
+    console.log("Handling SAVING ID=" + id);
+    var data = req.app.locals.BannerItems.query;
+    var item = find(data, { '_id': id });
+    if (!item) { return res.end(notfoundstring); }
+    console.log("ORIGINAL VALUES " + JSON.stringify(item));
+    console.log("UPDATED VALUES: " + JSON.stringify(req.body));
+    item.description = req.body.description;
+    item.startDate = req.body.startDate;
+    item.endDate = req.body.endDate;
+    console.log("SAVING UPDATED ITEM " + JSON.stringify(item));
+    return res.redirect('/banneritem');
+});
 module.exports = api;

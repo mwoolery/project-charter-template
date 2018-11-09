@@ -1,0 +1,55 @@
+<br/>
+
+<br/>
+<h2>Create a new Banner Announcement</h2>
+<p>There are currently
+	<%= BannerItems.query.length %> Banner Items. </p>
+<br/>
+<% 
+maxID=0; 
+for (var i=0; i<BannerItems.query.length; i++) {
+    if(BannerItems.query[i]._id > maxID) {
+        maxID=BannerItems.query[i]._id;
+        }
+}
+%>
+	<p>The largest ID is
+		<%= maxID %>. </p>
+	
+	<div class="content">
+		<div>
+			<form name="banneritem" method="POST" action="/banneritem/save" + _id.value>
+
+				<div class="form-group" id=frm>
+					<label for="_id">ID</label>
+					<input type="number" class="form-control" id="_id" name="_id" value="<%= maxID+1 %>" required readonly>
+				</div>
+
+				
+<!-- 
+				
+-->
+
+				<div class="form-group">
+						<label for="description">Description:</label>
+						<input type="text" class="form-control" id="Description" name="description"  required>
+					</div>
+				<div class="form-group">
+						<label for="startDate">Start Date:</label>
+						<input type="text" class="form-control" id="startDate" name="startDate" required>
+				</div>
+				<div class="form-group">
+						<label for="startDate">End Date:</label>
+						<input type="text" class="form-control" id="endDate" name="endDate" required>
+				</div>
+				
+				<div class="form-group">
+					<input type="submit" value="Post new entry" class="btn btn-primary" />
+				</div>
+			</form>
+			<br/>
+			<form method="get" action="/banneritem">
+				<input type="submit" value="Return to list" class="btn btn-caution" />
+			</form>
+		</div>
+	</div>
