@@ -35,7 +35,7 @@
         "lodash.find": "latest",
         "lodash.findindex": "latest",
         "lodash.remove": "latest",
-        "mailgun-js": "^0.22.0",
+        "mailgun-js": "latest",
         "method-override": "latest",
         "mongoose": "latest",
         "nedb": "latest"
