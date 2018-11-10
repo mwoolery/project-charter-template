@@ -3,13 +3,13 @@
 <br/>
 <h2>Create a new Banner Announcement</h2>
 <p>There are currently
-	<%= BannerItems.query.length %> Banner Items. </p>
+	<%= BannerItem.query.length %> Banner Items. </p>
 <br/>
 <% 
 maxID=0; 
-for (var i=0; i<BannerItems.query.length; i++) {
-    if(BannerItems.query[i]._id > maxID) {
-        maxID=BannerItems.query[i]._id;
+for (var i=0; i<BannerItem.query.length; i++) {
+    if(BannerItem.query[i]._id > maxID) {
+        maxID=BannerItem.query[i]._id;
         }
 }
 %>

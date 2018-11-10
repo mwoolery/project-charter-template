@@ -1,9 +1,9 @@
-<% console.log(BannerItems.query); %>
+<% console.log(BannerItem.query); %>
 	<div class="container">
 		<hr>
 		<h2>Banner Items</h2>
 		<p>There are
-			<%= BannerItems.query.length %>  Banner Items <br/>
+			<%= BannerItem.query.length %>  Banner Items <br/>
 				<a href="/banneritem/create" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>Add a new one.</a></p>
 		<table class="table" border="1">
 			<thead>
@@ -17,25 +17,25 @@
 				</tr>
 			</thead>
 			<tbody>
-				<% for (var i = 0; i < BannerItems.query.length; i++) { %>
+				<% for (var i = 0; i < BannerItem.query.length; i++) { %>
 					<tr>
 						<td>
-							<%=  BannerItems.query[i]._id %>
+							<%=  BannerItem.query[i]._id %>
 						</td>
 						<td>
-							<%=  BannerItems.query[i].description %>
+							<%=  BannerItem.query[i].description %>
 						</td>
 						<td>
-							<%=  BannerItems.query[i].startDate %>
+							<%=  BannerItem.query[i].startDate %>
 						</td>
 						<td>
-							<%=  BannerItems.query[i].endDate %>
+							<%=  BannerItem.query[i].endDate %>
 						</td>
 						
 						<td>
-							<a href="banneritem/delete/<%=  BannerItems.query[i]._id %>"class="btn btn-danger" >	<span class="glyphicon glyphicon-trash"></span> Delete </a> |
-							<a href="banneritem/details/<%= BannerItems.query[i]._id %>"class="btn btn-info">	  <span class="glyphicon glyphicon-list-alt"></span> Details </a> |
-							<a href="banneritem/edit/<%=    BannerItems.query[i]._id %>"class="btn btn-warning"> <span class="glyphicon glyphicon-edit"></span> Edit </a>
+							<a href="banneritem/delete/<%=  BannerItem.query[i]._id %>"class="btn btn-danger" >	<span class="glyphicon glyphicon-trash"></span> Delete </a> |
+							<a href="banneritem/details/<%= BannerItem.query[i]._id %>"class="btn btn-info">	  <span class="glyphicon glyphicon-list-alt"></span> Details </a> |
+							<a href="banneritem/edit/<%=    BannerItem.query[i]._id %>"class="btn btn-warning"> <span class="glyphicon glyphicon-edit"></span> Edit </a>
 						</td>
 					</tr>
 					<% } %>

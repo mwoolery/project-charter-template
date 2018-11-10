@@ -34,11 +34,11 @@ app.use(bodyParser.json())
 
 
 //set up seed data
-var BannerItems = require('./data/banneritem.json');
-db.insert(BannerItems);
-app.locals.BannerItems = db.find(BannerItems);
-console.log(Object.keys(BannerItems).length+ " BannerItems");
-console.log(BannerItems);
+var BannerItem = require('./data/banneritem.json');
+db.insert(BannerItem);
+app.locals.BannerItem = db.find(BannerItem);
+console.log(Object.keys(BannerItem).length+ " BannerItem");
+console.log(BannerItem);
 app.use('/banneritem', require('./controllers/banneritem.js'));
 
 
