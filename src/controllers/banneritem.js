@@ -102,7 +102,7 @@ api.get('/edit/:id', function(req, res) {
 api.post('/save', function(req, res) {
     console.log("Handling POST " + req);
     var data = req.app.locals.BannerItem.query;
-    var item = new Model;
+    var item =  new Model;
     console.log("NEW ID " + req.body._id);
     item._id = parseInt(req.body._id);
     item.description = req.body.description;
