@@ -90,15 +90,18 @@ app.post("/contact", function (req, res) {
   
     // logs to the terminal window (not the browser)
     const str ='\nContact Form Entry from: ' + name + '\n Contact Email: ' + email + '\n Reason for Contact: '+ reason + '\n Company:' + company + '\n Comment: ' + comment + '\n'
-    console.log(str)
+    
   
     const mailOptions = {
-      from: 'Excited User <woolerymatt03@gmail.com>', // sender address
-      to: 'woolerymatt03@gmail.com, mwoolery@nwmissouri.edu', // list of receivers
+      from: 'Hughes FieldHouse Contact Form <postmaster@sandboxc3954874d6c14d68a692fc29a2900ae9.mailgun.org>', // sender address
+      to: 'mwoolery@nwmissouri.edu', // list of receivers
       subject: 'Message from Resume Website Contact page', // Subject line
       text: str
+      
+
     }
   
+    console.log(mailOptions.text);
     // send message via MailGun's API
     mailgun.messages().send(mailOptions, function (error, body) {
       if (error) {
