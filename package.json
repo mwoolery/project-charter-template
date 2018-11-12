@@ -21,8 +21,20 @@
   },
   "homepage": "https://github.com/vijaythecoder/project-charter-template#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "ejs": "latest"
+    "body-parser": "latest",
+        "bootstrap": "4.1.1",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "express-ejs-layouts": "latest",
+        "jquery": "3.3.1",
+        "lodash": "latest",
+        "lodash.find": "latest",
+        "lodash.findindex": "latest",
+        "lodash.remove": "latest",
+        "mailgun-js": "latest",
+        "method-override": "latest",
+        "mongoose": "latest",
+        "nedb": "latest"
   },
   "keywords": [],
   "devDependencies": {}
