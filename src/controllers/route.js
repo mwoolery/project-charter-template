@@ -31,5 +31,15 @@ module.exports = function(app){
         res.render('offline')
     })
 
+    app.get("/secret",isLoggedIn, function(req, res){
+        res.render("secret");
+    });
+
 };
-    
+
+function isLoggedIn(req, res, next){
+    if(req.isAuthenticated()){
+    return next();
+    }
+    res.redirect("/login");
+}

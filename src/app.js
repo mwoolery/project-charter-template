@@ -2,6 +2,11 @@ var express = require('express'),
     url = require("url"),  
     path = require("path"),  
     fs = require("fs");
+var mongoose = require("mongoose"),
+    passport = require("passport"),
+    User = require("./models/user"),
+    LocalStrategy = require("passport-local"),
+    passportLocalMongoose = require("passport-local-mongoose");
 
 const bodyParser = require("body-parser")
 const expressLayouts = require('express-ejs-layouts');
@@ -20,8 +25,8 @@ db.loadDatabase();
 
 
 
+mongoose.connect("mongodb://localhost:27017/database");
 var app = express();
-
 
 
 app.set("views", path.resolve(__dirname, "views"));
@@ -41,10 +46,35 @@ console.log(Object.keys(BannerItem).length+ " BannerItem");
 console.log(BannerItem);
 app.use('/banneritem', require('./controllers/banneritem.js'));
 
+app.use(passport.initialize());
+app.use(passport.session());
+// 
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 var route = require('./controllers/route');
 route(app)
 
+// middleware
+app.post("/login", passport.authenticate("local",{
+    successRedirect:"/secret",
+    failureRedirect:"/login"
+  }),function(req, res){
+    res.send("User is "+ req.user.id);
+});
+
+app.get("/logout", function(req, res){
+    req.logout();
+    res.redirect("/");
+  });
+
+// function isLoggedIn(req, res, next){
+//     if(req.isAuthenticated()){
+//     return next();
+//     }
+//     res.redirect("/login");
+// }
 
 // 5 http POST /contact
 app.post("/contact", function (req, res) {
