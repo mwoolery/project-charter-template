@@ -10,6 +10,11 @@ var mongoose = require("mongoose"),
 
 const bodyParser = require("body-parser")
 const expressLayouts = require('express-ejs-layouts');
+
+var app = express();
+
+mongoose.connect("mongodb://localhost:27017/database");
+
 var port = process.env.PORT || 3000;
 const mgconfig = (process.env.NODE_ENV === "production") ? {} : require('./config.json') 
 const api_key = process.env.MAILGUN_API_KEY || mgconfig.MAILGUN_API_KEY
@@ -25,17 +30,20 @@ db.loadDatabase();
 
 
 
-mongoose.connect("mongodb://localhost:27017/database");
-var app = express();
 
+
+
+app.use(expressLayouts);
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(require("express-session")({
+  secret:"Rusty is the best og in the world",
+  resave: false,
+  saveUninitialized: false
+}));
+app.use(bodyParser.json())
 
 app.set("views", path.resolve(__dirname, "views"));
 app.set('view engine', 'ejs');
-
-app.use(express.static(__dirname + '/public/'));
-app.use(expressLayouts);
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
 
 
 //set up seed data
@@ -52,6 +60,8 @@ app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+app.use(express.static(__dirname + '/public/'));
 
 var route = require('./controllers/route');
 route(app)
