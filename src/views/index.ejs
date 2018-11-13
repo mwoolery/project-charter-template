@@ -2,6 +2,34 @@
   <!-- Page Content -->
   <div class="container">
 
+
+    <div class = "row">
+
+      <div class="col-md-8 ">
+          <p style = "text-align: center;
+          font-size: 25;
+          background-color: #006747;
+          color: white;
+          "> 
+            
+              <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
+                  <% var today = new Date(); 
+                    var startDate = new Date(BannerItem.query[i].startDate);
+                    var endDate = new Date(BannerItem.query[i].endDate);
+                  %>
+                    <% if((today >= startDate) && (today <= endDate) ){ %>
+  
+                      <%=  BannerItem.query[i].description  %>
+                      <br> 
+                   <% } %>
+                <% } %>
+            
+                    
+          </p>
+      
+          </div>
+    </div>
+
     <div class="row">
       <div class="col-md-8 imageqwe">
         <!-- <img class="img-fluid" src="https://www.nwmissouri.edu/HughesFieldhouse/images/main-homepage.jpg" alt=""> -->

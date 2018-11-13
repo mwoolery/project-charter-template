@@ -1,6 +1,17 @@
+var express = require('express');
+var api = express.Router();
+var find = require('lodash.find');
+var remove = require('lodash.remove');
+var findIndex = require('lodash.findindex');
+var Model = require('../models/bannerItem.js');
+const notfoundstring = 'No such aggregate material';
+
 module.exports = function(app){
     app.get('/', function(req, res){
        res.render('index');
+      
+    var data = req.app.locals.BannerItem.query;
+    res.send(JSON.stringify(data));
     });
 
     app.get('/login', function (req, res) {
