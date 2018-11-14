@@ -3,10 +3,10 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
  */
-
-body {
-  padding-top: 54px;
+body{
+  top: 0;
 }
+
 .navlogo{
   z-index: 100;
   width: 90px;
@@ -47,7 +47,7 @@ body {
 margin-inline-start: auto;
 margin-inline-end: auto;
 padding: 14px 16px; */
-top: 35px;
+
 width: 100%;
 
 }
@@ -119,9 +119,7 @@ width: 100%;
 }
 }
 @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
+  
 }
 
 /* ul#nwMenu a.az {

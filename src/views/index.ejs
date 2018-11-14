@@ -1,34 +1,34 @@
 
   <!-- Page Content -->
-  <div class="container">
-
-
-    <div class = "row">
-
-      <div class="col-md-8 ">
-          <p style = "text-align: center;
-          font-size: 25;
-          background-color: #006747;
-          color: white;
-          "> 
-            
-              <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
-                  <% var today = new Date(); 
-                    var startDate = new Date(BannerItem.query[i].startDate);
-                    var endDate = new Date(BannerItem.query[i].endDate);
-                  %>
-                    <% if((today >= startDate) && (today <= endDate) ){ %>
   
-                      <%=  BannerItem.query[i].description  %>
-                      <br> 
-                   <% } %>
-                <% } %>
-            
-                    
-          </p>
-      
-          </div>
-    </div>
+
+<br>
+<div class = "row" >
+
+    <div class="col-md-8 ">
+        <p style = "text-align: center;
+        font-size: 25;
+        background-color: #006747;
+        color: white;
+        "> 
+          
+            <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
+                <% var today = new Date(); 
+                  var startDate = new Date(BannerItem.query[i].startDate);
+                  var endDate = new Date(BannerItem.query[i].endDate);
+                %>
+                  <% if((today >= startDate) && (today <= endDate) ){ %>
+
+                    <%=  BannerItem.query[i].description  %>
+                    <br> 
+                 <% } %>
+              <% } %>
+          
+                  
+        </p>
+    
+        </div>
+  </div>
 
     <div class="row">
       <div class="col-md-8 imageqwe">
@@ -185,32 +185,28 @@
         <br>
         <section class="sec1">
           <center>Hours of Operation</center>
-          <table style="width:100%" border="1">
+          <table style="width:100%">
             
-              <tr>
-                  <th>Day</th>
-                  <th>Hours</th>
-                  <th>Use</th>
-                </tr>
+              
             <tr> 
-              <th  rowspan = "3">Mon-Fri</th>
-              <td>6am - 1pm</td>
+              <th  rowspan = "3" valign="top">Mon-Fri</th>
+              <td> 6am - 1pm</td>
               <td>Community Walk</td>
             </tr>
             <tr> 
                 
-                <td>1 - 6:45pm</td>
+                <td> 1 - 6:45pm</td>
                 <td>Athletics Use</td>
               </tr>
             <tr> 
                   
-                  <td>7pm - Close</td>
-                  <td>Community Walk</td>
+                  <td> 7pm - Close</td>
+                  <td>University Campus Rec</td>
                 </tr>
             <tr>
                 <th>Sat-Sun</th>
-                <td>Closed</td>
-                <td>Closed For Weekend Events</td>
+                <td>Event Hours</td>
+                <td>Athletics/Special Events</td>
             </tr>
 
 
@@ -257,7 +253,7 @@
 
     <!-- /.container -->
 
-  </div>
+  
   </div>
   <script>
   
