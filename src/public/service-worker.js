@@ -41,21 +41,19 @@ self.addEventListener('activate', function(e) {
 
 // check for the cache
 self.addEventListener('fetch', (event) => {
-  if (event.request.method === 'GET') {
-    event.respondWith(
-      caches.match(event.request)
-      .then((cached) => {
-        var networked = fetch(event.request)
-          .then((response) => {
-            let cacheCopy = response.clone()
-            caches.open(cacheName)
-              .then(cache => cache.put(event.request, cacheCopy))
-            return response;
-          })
-          .catch(() => caches.match(offlinePage));
-        return cached || networked;
-      })
-    )
-  }
-  return;
+  if (event.request.method != 'GET') return;
+
+  event.respondWith(async function() {
+    
+    const cache = await caches.open(cacheName);
+    const cachedResponse = await cache.match(event.request);
+
+    if (cachedResponse) {
+
+      event.waitUntil(cache.add(event.request));
+      return cachedResponse;
+    }
+
+    return fetch(event.request);
+  }());
 });
