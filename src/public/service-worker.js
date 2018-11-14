@@ -1,4 +1,4 @@
-const offlinePage = '/offline.ejs';
+const offlinePage = '/offline.html';
 
 var dataCacheName = 'HughesFHdataCache';
 var cacheName = 'HughesFHcache';
@@ -50,11 +50,9 @@ self.addEventListener('fetch', (event) => {
             let cacheCopy = response.clone()
             caches.open(cacheName)
               .then(cache => cache.put(event.request, cacheCopy))
-            if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') {  
             return response;
-            }
           })
-          //.catch(() => caches.match(offlinePage));
+          .catch(() => caches.match(offlinePage));
         return cached || networked;
       })
     )
