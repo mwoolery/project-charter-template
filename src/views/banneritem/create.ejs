@@ -34,14 +34,49 @@ for (var i=0; i<BannerItem.query.length; i++) {
 						<label for="description">Description:</label>
 						<input type="text" class="form-control" id="Description" name="description"  required>
 					</div>
-				<div class="form-group">
-						<label for="startDate">Start Date:</label>
-						<input type="text" class="form-control" id="startDate" name="startDate" required>
-				</div>
-				<div class="form-group">
-						<label for="startDate">End Date:</label>
-						<input type="text" class="form-control" id="endDate" name="endDate" required>
-				</div>
+				
+				
+					<div class="form-group ">
+							<label for="startDate">Start Date:</label>
+							<div class="input-group datepick1">
+									
+							  <input type="text" class="form-control" name="startDate" id="startDate" value="" required>
+							  <div class="input-group-addon">
+								<span class="glyphicon glyphicon-calendar"></span>
+							  </div>
+							</div>
+						  </div>
+					<script>
+							$(document).ready(function() {
+  $('.datepick1').datetimepicker({
+    format: 'MM-DD-YYYY',
+    ignoreReadonly: true
+  });
+});
+
+						</script>	
+				            
+
+			</div>
+			<div class="form-group ">
+					<label for="endDate">End Date:</label>
+					<div class="input-group datepick2">
+							
+					  <input type="text" class="form-control" name="endDate" id="endDate" value="" required>
+					  <div class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+					  </div>
+					</div>
+				  </div>
+			<script>
+					$(document).ready(function() {
+$('.datepick2').datetimepicker({
+format: 'MM-DD-YYYY',
+ignoreReadonly: true
+});
+});
+				</script>	
+					
 				
 				<div class="form-group">
 					<input type="submit" value="Post new entry" class="btn btn-primary" />
