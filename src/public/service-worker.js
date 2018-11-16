@@ -1,25 +1,13 @@
 var CACHE = 'HughesFHcache';
 
-addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        if (response) {
-          return response;     // if valid response is found in cache return it
-        } else {
-          return fetch(event.request)     //fetch from internet
-            .then(function(res) {
-              return caches.open(CACHE)
-                .then(function(cache) {
-                  //cache.put(event.request.url, res.clone());    //save the response for future
-                  return res;   // return the fetched data
-                })
-            })
-            
-        }
-      })
+self.addEventListener('fetch', function(e) {
+  console.log('[ServiceWorker] Fetch', e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
   );
-});      
+});
 
 self.addEventListener('install', function(e) {
   e.waitUntil(

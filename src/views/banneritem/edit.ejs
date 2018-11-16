@@ -8,7 +8,7 @@
 <form method="POST" action="/banneritem/save/<%= BannerItem._id %>">
 <table class="table table-hover table-bordered">
     <tr><th>ID</th> <td> <%= BannerItem._id %>  </td></tr>
-	<tr><th>Description</th> <td><input type="text" class="form-control" name="description" value="<%= BannerItem.description %>">  </input></td></tr>
+	<tr><th>Description</th> <td><input type="text" class="form-control" name="description" value="<%= BannerItem.description %>" maxlength="50">  </input></td></tr>
 	<tr><th>Start Date for Banner Display</th> <td>
 
 			<div class="input-group datepick1">
