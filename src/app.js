@@ -13,8 +13,9 @@ const expressLayouts = require('express-ejs-layouts');
 
 var app = express();
 
-mongoose.connect("mongodb://localhost:27017/database");
+// mongoose.connect("mongodb://localhost:27017/database");
 
+mongoose.connect("mongodb://dbUser:HFHsport1@cluster0-shard-00-00-5irub.mongodb.net:27017,cluster0-shard-00-01-5irub.mongodb.net:27017,cluster0-shard-00-02-5irub.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true");
 var port = process.env.PORT || 3000;
 const mgconfig = (process.env.NODE_ENV === "production") ? {} : require('./config.json') 
 const api_key = process.env.MAILGUN_API_KEY || mgconfig.MAILGUN_API_KEY
