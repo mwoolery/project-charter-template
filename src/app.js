@@ -93,14 +93,25 @@ app.post("/contact", function (req, res) {
     const reason = req.body.inputreason;
     const company = req.body.inputcompany;
     const comment = req.body.inputcomment;
+    const phone = req.body.inputphone;
+    const start = req.body.inputstart;
+    const end = req.body.inputend;
     // const name = "Matt Woolery";
     // const email = "woolerymatt@yahoo.com";
     // const company = "nwmsu";
     // const comment = "testing";
   
     // logs to the terminal window (not the browser)
-    const str ='\nContact Form Entry from: ' + name + '\n Contact Email: ' + email + '\n Reason for Contact: '+ reason + '\n Company:' + company + '\n Comment: ' + comment + '\n'
-    
+    const str ='\nContact Form Entry from: ' + name + 
+               '\nContact Phone Number: ' + phone + 
+               '\nContact Email: ' + email + 
+               '\nReason for Contact: '+ reason + 
+               '\nReservation Start: '+ start + 
+               '\nReservation End: '+ end + 
+               '\nCompany:' + company + 
+               '\nComment: ' + comment + 
+               '\n';
+   
   
     const mailOptions = {
       from: 'Hughes FieldHouse Contact Form <postmaster@sandboxc3954874d6c14d68a692fc29a2900ae9.mailgun.org>', // sender address
