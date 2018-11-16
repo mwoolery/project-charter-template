@@ -11,7 +11,7 @@ addEventListener('fetch', function(event) {
             .then(function(res) {
               return caches.open(CACHE)
                 .then(function(cache) {
-                  cache.put(event.request.url, res.clone());    //save the response for future
+                  //cache.put(event.request.url, res.clone());    //save the response for future
                   return res;   // return the fetched data
                 })
             })

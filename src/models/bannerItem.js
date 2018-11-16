@@ -8,8 +8,8 @@ var mongoose = require('mongoose')
 var BannerItemSchema = new Schema({
 	_id: { type: Number, required: true },
     description: { type: String, required: true },
-    startDate: { type: Date, required: true},
-    endDate: { type: Date, required: true}
+    startDate: { type: String, required: true},
+    endDate: { type: String, required: true}
 })
 
 var bannerItem = mongoose.model('BannerItem', BannerItemSchema)
