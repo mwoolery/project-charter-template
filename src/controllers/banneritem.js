@@ -14,6 +14,7 @@ const notfoundstring = 'No such aggregate material';
 
 // HANDLE JSON REQUESTS --------------------------------------------
 
+
 api.get('/findall', function(req, res){
     res.setHeader('Content-Type', 'application/json');
     var data = req.app.locals.BannerItem.query;
@@ -29,7 +30,7 @@ api.get('/findone/:id', function(req, res){
     res.send(JSON.stringify(item));
 });
 
-api.get('/', function(req, res) {
+api.get('/',function(req, res) {
     console.log("Handling GET " + req);
     return res.render('banneritem/index.ejs',
         { title: "Banner Items", layout: "bannerlayout.ejs" });

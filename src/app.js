@@ -69,7 +69,7 @@ route(app)
 
 // middleware
 app.post("/login", passport.authenticate("local",{
-    successRedirect:"/secret",
+    successRedirect:"/banneritem",
     failureRedirect:"/login"
   }),function(req, res){
     res.send("User is "+ req.user.id);

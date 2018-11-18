@@ -43,11 +43,6 @@ module.exports = function(app){
         res.render('offline')
     })
 
-    app.get("/secret",isLoggedIn, function(req, res){
-        res.render("secret");
-    });
-
-    
     app.get('/', function(req, res){
         res.render('index');
        
