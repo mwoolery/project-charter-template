@@ -31,9 +31,14 @@ api.get('/findone/:id', function(req, res){
 });
 
 api.get('/',function(req, res) {
+    if(req.isAuthenticated()){
     console.log("Handling GET " + req);
     return res.render('banneritem/index.ejs',
         { title: "Banner Items", layout: "bannerlayout.ejs" });
+    }
+    else{
+        return res.render('/login')
+    }
 });
 
 // GET create
