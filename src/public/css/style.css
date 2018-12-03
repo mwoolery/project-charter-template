@@ -169,7 +169,15 @@ width: 100%;
   padding-left: 10px;
   overflow: hidden;
   height:200px;
+
   
+  
+}
+.sec1 iframe{
+  width: 100%;
+}
+#twitter-widget-0 {
+  width:100% !important;
 }
 .blink{
   /* color:rgb(17, 16, 16); */
