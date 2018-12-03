@@ -57,9 +57,12 @@ This release will focus on user acceptance/usability testing and getting the ban
 
 
 ### Release 3 (April 12)
+This release will focus on getting everything ready for the app to be put into full implementation
+
 1. As a fieldhouse team member, I want to access a step by step plan to change control over the site and independent accounts on the page in case a new member needs access or an old member leaves. [Assigned Dattu, Review by Matt]
 2. As a fieldhouse team member, I want to see that the fieldhouse is fully implemented with access to all of the independent accounts (mailgun, atlas, analytics, etc.) [Assigned Matt, Review by Matt]
 3. As a fieldhouse team member, I want to know who to contact to perform maintaince or be trained on how to make site updates (train someone on maintaince or have step by step instructions) [Assigned Dattu, Review by Matt]
+4. As a user, I want the changes that are made be reflected in the databases (Final Database implementation) [Assigned Matt, Review by Matt]
 
 ## Development Team
 
