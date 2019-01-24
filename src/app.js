@@ -114,6 +114,7 @@ app.post("/contact", function (req, res) {
                '\n';
    
   
+    // change email to bbyland@nwmissouri.edu when implemented           
     const mailOptions = {
       from: 'Hughes FieldHouse Contact Form <postmaster@sandboxc3954874d6c14d68a692fc29a2900ae9.mailgun.org>', // sender address
       to: 'mwoolery@nwmissouri.edu', // list of receivers
