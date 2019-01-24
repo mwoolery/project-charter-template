@@ -1,0 +1,27 @@
+-----Original Appointment-----
+From: Woolery,Matthew A 
+Sent: Friday, October 19, 2018 10:09 AM
+To: hughesfieldhouse; Case,Denise M; Busireddy,Shivani; Bommineni,Yashwanth Reddy; Cherukuru,Chaithanya; Devineni,Sai Sirisha; Dodla,Shivani Reddy; Guntuku,Girish; Gurudu,Saicharan; Kancharla,Sravya; Kumar,Anurag; Kumar,Ujjawal; Lakhinana,Subodh Bhargav; Medarametla,Dattu Bhargav; Muchkur Bogarajula,Santosh Sekhar; Nuggu,Naveenkumar; Tupakula,Vijay Kumar; Vankina,Satya Sai Ram; Vijaya,Sreelekha; Yalamareddy,Vyshnavi; Yanala,Srimai Reddy
+Subject: Meeting to Go Over MVP 1 and 2 Acceptance Criteria 
+When: Monday, October 22, 2018 9:00 AM-10:00 AM (UTC-06:00) Central Time (US & Canada).
+Where: Valk 111
+
+Hello all,
+
+I would like to invite you to our acceptance criteria review meeting for our MVP 1 and 2 release.  Fieldhouse team I appreciate the gesture of creating the invite for us but it is also required for our class to submit a copy of an invite that we sent out so feel free to accept this one instead.
+
+Agenda
+1.	Review the acceptance criteria for MVP 1
+2.	Review the acceptance criteria for MVP 2
+3.	Look at the acceptance criteria for MVP 3 to see if we can cross some of those off.
+4.	Go over the Remaining plan (Deferred User Stories and Plans originally for our 2nd semester)
+
+
+The link below is to the acceptance criteria list so you can review it before hand and ask any questions
+https://vijaythecoder.github.io/project-charter-template/docs/MVPAcceptanceChecklist 
+
+As usual let me know if you have any questions about what is going on with the app or about this meeting
+
+Thanks,
+
+Matt Woolery

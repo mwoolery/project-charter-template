@@ -1,0 +1,281 @@
+
+  <!-- Page Content -->
+  
+
+<br>
+<div class = "row" >
+
+    <div class="col-md-8 ">
+        <p style = "text-align: center;
+        font-size: 25;
+        background-color: #006747;
+        color: white;
+        "> 
+          
+            <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
+                <% var today = new Date(); 
+                  var startDate = new Date(BannerItem.query[i].startDate);
+                  var endDate = new Date(BannerItem.query[i].endDate);
+                %>
+                  <% if((today >= startDate) && (today <= endDate) ){ %>
+
+                    <%=  BannerItem.query[i].description  %>
+                    <br> 
+                 <% } %>
+              <% } %>
+          
+                  
+        </p>
+    
+        </div>
+  </div>
+
+    <div class="row">
+      <div class="col-md-8 imageqwe">
+        <!-- <img class="img-fluid" src="https://www.nwmissouri.edu/HughesFieldhouse/images/main-homepage.jpg" alt=""> -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 imageqwe " src="img/image8.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 imageqwe " src="img/image2.png" alt="Second slide">
+            </div>
+            <div class="carousel-item ">
+              <img class="d-block w-100 imageqwe " src="img/image3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item ">
+              <img class="d-block w-100 imageqwe " src="img/image1.png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item ">
+              <img class="d-block w-100 imageqwe " src="img/image5.png" alt="Fifth slide">
+            </div>
+            <div class="carousel-item ">
+              <img class="d-block w-100 imageqwe " src="img/image6.png" alt="Sixth slide">
+            </div>
+            <div class="carousel-item ">
+              <img class="d-block w-100 imageqwe " src="img/image7.png" alt="Seventh slide">
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <br>
+        <p class="countDownStyle" id="countDown"> &nbsp;</p>
+        <br>
+       
+
+        <div id="story">
+          <!-- Related Projects Row -->
+          <div class="discover">
+            <h3>About</h3>
+          </div>
+          <div class="row">
+
+
+
+            <div class="col-md-6 col-sm-6 mb-4">
+              <div class="storyb">
+                <a href="meetingRooms">
+                  <img class="img-fluid" src=".\img\2.jpg" alt="">
+                  <h3 class="storytext">Explore meeting rooms</h3>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 mb-4">
+              <div class="storyb">
+                <a href="locker">
+                  <img class="img-fluid" src=".\img\locker.JPG" alt="">
+                  <h3 class="storytext">Locker Information</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 mb-4">
+              <div class="storyb">
+                <a href="https://www.nwmissouri.edu/HughesFieldhouse/donate.htm" target="_blank">
+                  <img class="img-fluid" src=".\img\brick.jpg" alt="Donate to the Fieldhouse by purchasing a brick">
+                  <h3 class="storytext">Donate to Walk of Champions</h3>
+                </a>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-6 col-sm-6 mb-4">
+              <div class="storyb">
+                <a href="https://www.nwmissouri.edu/HughesFieldhouse/about.htm" target="_blank">
+                  <img class="img-fluid" src=".\img\image5.png" alt="">
+                  <h3 class="storytext">Facilities</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-6 col-sm-6 mb-4">
+              <div class="storyb">
+                <a href="https://www.nwmissouri.edu/HughesFieldhouse/gallery/index.htm" target="_blank">
+                  <img class="img-fluid" src=".\img\4.jpg" alt="">
+                  <h3 class="storytext">News & Photos</h3>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 mb-4">
+              <div class="storyb">
+                <a href="https://www.nwmissouri.edu/HughesFieldhouse/experience.htm" target="_blank">
+                  <img class="img-fluid" src=".\img\image4.png" alt="">
+                  <h3 class="storytext">The Experience</h3>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!-- asside -->
+        <!---
+        <section class="sec1">
+
+          <a href="/events" style="color: #000000;">
+            <center>Today's events</center>
+          </a>
+
+
+          <iframe src='https://www.aaiscloud.com/NWMOStateU/Calendars/ActivityCalendar.aspx?calendarId=1f100ed0-c7f9-11e8-8b07-e5af6baab4cb&condensedView=1'
+            style='margin:0' width='100%' height='300px'>
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+        </section>
+      -->
+        <br>
+        <section class="sec1">
+          <center>Contact us</center>
+          <strong>Northwest Missouri State University</strong>
+          <br>
+          <strong>
+            800 University Drive
+          </strong>
+          <br>
+          <strong>Maryville, MO 64468</strong>
+          <br>
+          <strong>Phone: </strong>
+          <a href="tel:+1-660-562-1562" style="color: #000000">660.562.1562</a>
+          <br>
+          <strong>Toll-free:</strong>
+          <a href="tel:+1-800-633-1175" style="color: #000000"> 800.633.1175</a>
+          <br>
+          <strong>Email:</strong>
+          <a href="mailto:crec@nwmissouri.edu" style="color: #000000">crec@nwmissouri.edu</a>
+        </section>
+        <br>
+        <section class="sec1">
+          <center>Hours of Operation</center>
+          <table style="width:100%">
+            
+              
+            <tr> 
+              <th  rowspan = "3" valign="top">Mon-Fri</th>
+              <td> 6am - 1pm</td>
+              <td>Community Walk</td>
+            </tr>
+            <tr> 
+                
+                <td> 1 - 6:45pm</td>
+                <td>Athletics Use</td>
+              </tr>
+            <tr> 
+                  
+                  <td> 7pm - Close</td>
+                  <td>University Campus Rec</td>
+                </tr>
+            <tr>
+                <th>Sat-Sun</th>
+                <td>Event Hours</td>
+                <td>Athletics/Special Events</td>
+            </tr>
+
+
+          </table>
+        </section>
+        <br>
+        <section class="sec2">
+
+
+          <div class="map-responsive" onclick="">
+            <iframe id="iframeid" src="https://maps.google.com/maps?q=hughes%20field%20house&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%">
+
+            </iframe>
+          </div>
+
+        </section>
+        <br>
+        <section class="sec1">
+          
+          
+            <a class="twitter-timeline" data-width="520" data-height="400" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/NWMOSTATE?ref_src=twsrc%5Etfw">Tweets by NWMOSTATE</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+         
+        </section>
+        
+        <br>
+        <section class="sec1">
+        <div class="col-md-4">
+          <aside>
+            <iframe src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fnwmissouri&width=300&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435"
+              scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:450px; height:430px; background: white; float:left; "
+              allowTransparency="true">
+            </iframe>
+          </aside>
+        </div>
+        </section>
+      </div>
+
+    </div>
+
+
+
+    <!-- /.row -->
+
+    <!-- /.container -->
+
+  
+  </div>
+  <script>
+  
+  (function() {
+    'use strict';
+  
+    var app = {
+      isLoading: true,
+      spinner: document.querySelector('.loader'),
+      container: document.querySelector('.main'),
+      addDialog: document.querySelector('.dialog-container')
+    };
+  
+  
+  
+  
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('service-worker.js')
+               .then(function() { console.log('Service Worker Registered'); });
+    }
+  })();
+  
+  </script>
+

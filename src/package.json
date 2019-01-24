@@ -26,8 +26,24 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-portfolio-item.git"
     },
     "dependencies": {
+        "body-parser": "latest",
         "bootstrap": "4.1.1",
-        "jquery": "3.3.1"
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "express-ejs-layouts": "^2.5.0",
+        "express-session": "^1.15.6",
+        "jquery": "3.3.1",
+        "lodash": "^4.17.11",
+        "lodash.find": "^4.6.0",
+        "lodash.findindex": "latest",
+        "lodash.remove": "latest",
+        "mailgun-js": "latest",
+        "method-override": "latest",
+        "mongoose": "^5.3.12",
+        "nedb": "^1.8.0",
+        "passport": "^0.4.0",
+        "passport-local": "^1.0.0",
+        "passport-local-mongoose": "^4.4.0"
     },
     "devDependencies": {
         "browser-sync": "2.24.5",

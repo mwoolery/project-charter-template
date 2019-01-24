@@ -1,0 +1,46 @@
+<% console.log(BannerItem.query); %>
+	<div class="container">
+		<hr>
+		<h2>Banner Items</h2>
+		<p>There are
+			<%= BannerItem.query.length %>  Banner Items <br/>
+				<a href="/banneritem/create" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>Add a new one.</a></p>
+		<table class="table" border="1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Description</th>
+					<th>Start Date for Banner Display</th>
+					<th>End Date for Banner Display</th>
+					
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% for (var i = 0; i < BannerItem.query.length; i++) { %>
+					<tr>
+						<td>
+							<%=  BannerItem.query[i]._id %>
+						</td>
+						<td>
+							<%=  BannerItem.query[i].description %>
+						</td>
+						<td>
+							<%=  BannerItem.query[i].startDate %>
+						</td>
+						<td>
+							<%=  BannerItem.query[i].endDate %>
+						</td>
+						
+						<td>
+							<a href="banneritem/delete/<%=  BannerItem.query[i]._id %>"class="btn btn-danger" >	<span class="glyphicon glyphicon-trash"></span> Delete </a> |
+							<a href="banneritem/details/<%= BannerItem.query[i]._id %>"class="btn btn-info">	  <span class="glyphicon glyphicon-list-alt"></span> Details </a> |
+							<a href="banneritem/edit/<%=    BannerItem.query[i]._id %>"class="btn btn-warning"> <span class="glyphicon glyphicon-edit"></span> Edit </a>
+						</td>
+					</tr>
+					<% } %>
+					
+			</tbody>
+		</table>
+	</div>
+	

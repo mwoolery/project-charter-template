@@ -1,0 +1,62 @@
+<br/>
+<h2>Edit <%= title %></h2>
+<br/>
+<form method="get" action="/banneritem">
+		<input type="submit" value="Return to list" class="btn btn-caution" />
+	</form>
+<br/><br/>
+<form method="POST" action="/banneritem/save/<%= BannerItem._id %>">
+<table class="table table-hover table-bordered">
+    <tr><th>ID</th> <td> <%= BannerItem._id %>  </td></tr>
+	<tr><th>Description</th> <td><input type="text" class="form-control" name="description" value="<%= BannerItem.description %>" maxlength="50">  </input></td></tr>
+	<tr><th>Start Date for Banner Display</th> <td>
+
+			<div class="input-group datepick1">
+									
+					<input type="text" class="form-control" name="startDate" id="startDate" value="<%= BannerItem.startDate %>" required>
+					<div class="input-group-addon">
+					  <span class="glyphicon glyphicon-calendar"></span>
+					</div>
+				  </div>
+				</div><script>
+						$(document).ready(function() {
+$('.datepick1').datetimepicker({
+format: 'MM-DD-YYYY',
+ignoreReadonly: true
+});
+});
+
+					</script>	
+	</td></tr>
+	<tr><th>End Date for Banner Display</th> <td>
+
+			<div class="input-group datepick2">
+									
+					<input type="text" class="form-control" name="endDate" id="endDate" value="<%= BannerItem.endDate %>" required>
+					<div class="input-group-addon">
+					  <span class="glyphicon glyphicon-calendar"></span>
+					</div>
+				  </div>
+				</div><script>
+						$(document).ready(function() {
+$('.datepick2').datetimepicker({
+format: 'MM-DD-YYYY',
+ignoreReadonly: true
+});
+});
+
+					</script>	
+	</td></tr>
+	<tr><td colspan="2"> 
+		<div class="row">
+			<div class="col-md-2"> 
+				<!-- <a href="/estimatePartMileage" >Return to list</a> -->
+			</div>
+			<div class="col-md-5"> 
+					<button type="submit" class="btn btn-caution">Save this item</button>
+			</div>
+		</div>
+		</td>
+	</tr>
+</table>
+</form>
