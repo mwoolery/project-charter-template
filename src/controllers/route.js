@@ -6,12 +6,12 @@ var findIndex = require('lodash.findindex');
 var Model = require('../models/bannerItem.js');
 const notfoundstring = 'No such aggregate material';
 
-function isLoggedIn(req, res, next){
-    if(req.isAuthenticated()){
-    return next();
-    }
-    res.redirect("/login"); 
-}
+// function isLoggedIn(req, res, next){
+//     if(req.isAuthenticated()){
+//     return next();
+//     }
+//     res.redirect("/login"); 
+// }
 
 module.exports = function(app){
 
