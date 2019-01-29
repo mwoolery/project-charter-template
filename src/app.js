@@ -71,7 +71,7 @@ app.post("/login", passport.authenticate("local",{
     successRedirect:"/banneritem",
     failureRedirect:"/login"
   }),function(req, res){
-    res.send("User is "+ req.user.id);
+    //res.send("User is "+ req.user.id);
 });
 
 app.get("/logout", function(req, res){

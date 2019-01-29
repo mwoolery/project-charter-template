@@ -10,8 +10,10 @@
 				<tr>
 					<th>ID</th>
 					<th>Description</th>
-					<th>Start Date for Banner Display</th>
-					<th>End Date for Banner Display</th>
+					<th>Start Date and Time for Banner Display</th>
+					<th>End Date and Time for Banner Display</th>
+					<th>Priority</th>
+					<th>Link</th>
 					
 					<th>Actions</th>
 				</tr>
@@ -26,10 +28,16 @@
 							<%=  BannerItem.query[i].description %>
 						</td>
 						<td>
-							<%=  BannerItem.query[i].startDate %>
+							<%=  BannerItem.query[i].startDate %> <%=  BannerItem.query[i].startTime %>
 						</td>
 						<td>
-							<%=  BannerItem.query[i].endDate %>
+							<%=  BannerItem.query[i].endDate %> <%=  BannerItem.query[i].endTime %>
+						</td>
+						<td>
+							<%=  BannerItem.query[i].priority %>
+						</td>
+						<td>
+							<%=  BannerItem.query[i].link %>
 						</td>
 						
 						<td>

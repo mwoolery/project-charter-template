@@ -8,8 +8,10 @@
       <tr>
        <th>ID</th>
        <th>Description</th>
-       <th>Start Date for Banner Display</th>
-       <th>End Date for Banner Display</th>
+       <th>Start Date and Time for Banner Display</th>
+       <th>End Date and Time for Banner Display</th>
+       <th>Priority</th>
+       <th>Link</th>
        
     </tr>
     </thead>
@@ -19,8 +21,10 @@
         <tr>
                 <td><%= BannerItem._id %></td>
                 <td><%= BannerItem.description %></td>
-                <td><%= BannerItem.startDate%></td>
-                <td><%= BannerItem.endDate %></td>
+                <td><%= BannerItem.startDate%> <%= BannerItem.startTime%></td>
+                <td><%= BannerItem.endDate %> <%= BannerItem.endTime%></td>
+                <td><%= BannerItem.priority %></td>
+                <td><%= BannerItem.link %></td>
         </tr>
 </tbody>
 </table>

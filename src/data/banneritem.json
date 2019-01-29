@@ -3,21 +3,30 @@
       "_id":  1,
       "description": "This is a short item",
       "startDate": "11-12-2018",
-      "endDate": "11-13-2018"
+      "endDate": "11-13-2018",
+      "startTime": "12:00",
+      "endTime": "12:00",
+      "priority": true
       
     },
     {
         "_id":  2,
         "description": "This is a short item",
         "startDate": "11-13-2018",
-        "endDate": "11-14-2018"
+        "endDate": "11-14-2018",
+        "startTime": "12:00",
+        "endTime": "12:00",
+        "priority": true
         
     },
     {
         "_id":  3,
         "description": "This is a short item",
         "startDate": "11-15-2018",
-        "endDate": "11-16-2018"
+        "endDate": "11-16-2018",
+        "startTime": "12:00",
+        "endTime": "12:00",
+        "priority": true
         
     }
   ]

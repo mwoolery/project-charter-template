@@ -109,6 +109,10 @@ api.post('/save', function(req, res) {
     item.description = req.body.description;
     item.startDate = req.body.startDate;
     item.endDate = req.body.endDate;
+    item.startTime = req.body.startTime;
+    item.endTime = req.body.endTime;
+    item.priority = req.body.priority;
+    item.link = req.body.link;
     data.push(item);
     console.log("SAVING NEW ITEM " + JSON.stringify(item));
     return res.redirect('/banneritem');
@@ -129,6 +133,10 @@ api.post('/save/:id', function(req, res) {
     item.description = req.body.description;
     item.startDate = req.body.startDate;
     item.endDate = req.body.endDate;
+    item.startTime = req.body.startTime;
+    item.endTime = req.body.endTime;
+    item.priority = req.body.priority;
+    item.link = req.body.link;
     console.log("SAVING UPDATED ITEM " + JSON.stringify(item));
     return res.redirect('/banneritem');
 });

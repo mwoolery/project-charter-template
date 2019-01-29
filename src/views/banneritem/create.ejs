@@ -58,6 +58,10 @@ for (var i=0; i<BannerItem.query.length; i++) {
 				            
 
 			</div>
+			<div class="form-group">
+				<label for="startTime">Start Time:</label>
+				<input type="text" class="form-control" id="startTime" name="startTime"  required maxlength="50">
+			</div>
 			<div class="form-group ">
 					<label for="endDate">End Date for Banner Display:</label>
 					<div class="input-group datepick2">
@@ -67,7 +71,7 @@ for (var i=0; i<BannerItem.query.length; i++) {
 						<span class="glyphicon glyphicon-calendar"></span>
 					  </div>
 					</div>
-				  </div>
+					</div>
 			<script>
 					$(document).ready(function() {
 $('.datepick2').datetimepicker({
@@ -76,7 +80,20 @@ ignoreReadonly: true
 });
 });
 				</script>	
-					
+					<div class="form-group">
+						<label for="endTime">End Time:</label>
+						<input type="text" class="form-control" id="endTime" name="endTime"  required maxlength="50">
+					</div>
+
+					<div class="form-group">
+						<label for="priority">Priority:</label>
+						<input type="checkbox" class="form-control" id="priority" name="priority"  required maxlength="50">
+					</div>
+
+					<div class="form-group">
+						<label for="link">Link to Url:</label>
+						<input type="text" class="form-control" id="link" name="link"  required maxlength="100">
+					</div>
 				
 				<div class="form-group">
 					<input type="submit" value="Post new entry" class="btn btn-primary" />
