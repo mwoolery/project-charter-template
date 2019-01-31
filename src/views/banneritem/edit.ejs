@@ -49,7 +49,7 @@ ignoreReadonly: true
 					</script>	
 	</td></tr>
 	<tr><th>End Time</th> <td><input type="text" class="form-control" name="endTime" value="<%= BannerItem.endTime %>" maxlength="50">  </input></td></tr>
-	<tr><th>Piority</th> <td><input type="checkbox" class="form-control" name="priority" value="<%= BannerItem.priority %>" maxlength="50">  </input></td></tr>
+	<tr><th>Priority</th> <td><input id="priority" class="form-control" type="checkbox" name="priority" <%= BannerItem.priority ? "checked" : "" %>> </input></td></tr>
 	<tr><th>Link</th> <td><input type="text" class="form-control" name="link" value="<%= BannerItem.link %>" maxlength="150">  </input></td></tr>
 
 	<tr><td colspan="2"> 

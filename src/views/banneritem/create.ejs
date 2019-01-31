@@ -86,13 +86,14 @@ ignoreReadonly: true
 					</div>
 
 					<div class="form-group">
-						<label for="priority">Priority:</label>
-						<input type="checkbox" class="form-control" id="priority" name="priority"  required maxlength="50">
+						<label>Priority:</label>
+						<input type="checkbox" class="form-control" id="priority" name="priority" value=true >
+						<input type="hidden" class="form-control" id="priority2" name="priority" checked value=false>
 					</div>
 
 					<div class="form-group">
 						<label for="link">Link to Url:</label>
-						<input type="text" class="form-control" id="link" name="link"  required maxlength="100">
+						<input type="text" class="form-control" id="link" name="link"  maxlength="100">
 					</div>
 				
 				<div class="form-group">
@@ -100,7 +101,14 @@ ignoreReadonly: true
 				</div>
 			</form>
 			<br/>
-			<form method="get" action="/banneritem">
+			<script>
+				function checkboxSet(){
+				if(document.getElementById("priority2").checked) {
+   					 document.getElementById('priority2').disabled = true;
+				}
+			}
+				</script>
+			<form method="get" action="/banneritem" onsubmit="checkboxSet()">
 				<input type="submit" value="Return to list" class="btn btn-caution" />
 			</form>
 		</div>

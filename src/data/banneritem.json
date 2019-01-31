@@ -26,7 +26,7 @@
         "endDate": "11-16-2018",
         "startTime": "12:00",
         "endTime": "12:00",
-        "priority": true
+        "priority": false
         
     }
   ]

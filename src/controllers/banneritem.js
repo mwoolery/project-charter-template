@@ -111,7 +111,14 @@ api.post('/save', function(req, res) {
     item.endDate = req.body.endDate;
     item.startTime = req.body.startTime;
     item.endTime = req.body.endTime;
-    item.priority = req.body.priority;
+    //item.priority = req.body.priority;
+    var isPriority = req.body.priority;
+    if(isPriority=="on"){
+        isPriority = true;
+    }else{
+        isPriority =false;
+    }
+    item.priority = isPriority;
     item.link = req.body.link;
     data.push(item);
     console.log("SAVING NEW ITEM " + JSON.stringify(item));
@@ -135,7 +142,16 @@ api.post('/save/:id', function(req, res) {
     item.endDate = req.body.endDate;
     item.startTime = req.body.startTime;
     item.endTime = req.body.endTime;
-    item.priority = req.body.priority;
+    //item.priority = req.body.priority;
+   
+    var isPriority = req.body.priority;
+    if(isPriority=="on"){
+        isPriority = true;
+    }else{
+        isPriority =false;
+    }
+    item.priority = isPriority;
+    
     item.link = req.body.link;
     console.log("SAVING UPDATED ITEM " + JSON.stringify(item));
     return res.redirect('/banneritem');
