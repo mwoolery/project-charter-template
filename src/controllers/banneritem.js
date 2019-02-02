@@ -5,7 +5,17 @@ var remove = require('lodash.remove');
 var findIndex = require('lodash.findindex');
 var Model = require('../models/bannerItem.js');
 const notfoundstring = 'No such aggregate material';
+LocalStrategy = require("passport-local"),
+passportLocalMongoose = require("passport-local-mongoose"),
+ mongoose = require("mongoose"),
+  passport = require("passport");
 
+  function isLoggedIn(req, res, next){
+    if(req.isAuthenticated()){
+    return next();
+    }
+    res.redirect("/login");
+  }
 
 // See app.js to find default view folder (e.g.,"views")
 // see app.js to find  default URI for this controller (e.g., "aggregateMaterial")
@@ -30,7 +40,7 @@ api.get('/findone/:id', function(req, res){
     res.send(JSON.stringify(item));
 });
 
-api.get('/',function(req, res) {
+api.get('/', function(req, res) {
     console.log("Handling GET " + req);
     return res.render('banneritem/index.ejs',
         { title: "Banner Items", layout: "bannerlayout.ejs" });

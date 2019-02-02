@@ -46,8 +46,8 @@ module.exports = function(app){
     app.get('/', function(req, res){
         res.render('index');
        
-     var data = req.app.locals.BannerItem.query;
-     res.send(JSON.stringify(data));
+    //  var data = req.app.locals.BannerItem.query;
+    //  res.send(JSON.stringify(data));
      });
      
     
