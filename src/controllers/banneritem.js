@@ -11,9 +11,8 @@ passportLocalMongoose = require("passport-local-mongoose"),
   passport = require("passport");
 
   function isLoggedIn(req, res, next){
-    if(req.isAuthenticated()){
-        console.log(req);
-    return next();
+    if(req.session.passport && req.session.passport.user){
+       return next();
     }
     res.redirect("/login");
   }
@@ -41,7 +40,7 @@ api.get('/findone/:id', function(req, res){
     res.send(JSON.stringify(item));
 });
 
-api.get('/', function(req, res) {
+api.get('/',isLoggedIn, function(req, res) {
     console.log("Handling GET " + req);
     return res.render('banneritem/index.ejs',
         { title: "Banner Items", layout: "bannerlayout.ejs" });
@@ -180,5 +179,6 @@ api.post('/delete/:id', function(req, res, next) {
     return res.redirect('/banneritem');
 });
 
-
+  
+  
 module.exports = api;
