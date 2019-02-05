@@ -47,14 +47,14 @@ api.get('/',isLoggedIn, function(req, res) {
 });
 
 // GET create
-api.get("/create", function(req, res) {
+api.get("/create",isLoggedIn, function(req, res) {
     console.log('Handling GET /create' + req);
     res.render("banneritem/create.ejs",
         { title: "Banner Items", layout: "bannerlayout.ejs" });
 });
 
 // GET /delete/:id
-api.get('/delete/:id', function(req, res) {
+api.get('/delete/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /delete/:id " + req);
     var id = parseInt(req.params.id);
     var data = req.app.locals.BannerItem.query;
@@ -70,7 +70,7 @@ api.get('/delete/:id', function(req, res) {
 });
 
 // GET /details/:id
-api.get('/details/:id', function(req, res) {
+api.get('/details/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /details/:id " + req);
     var id = parseInt(req.params.id);
     var data = req.app.locals.BannerItem.query;
@@ -86,7 +86,7 @@ api.get('/details/:id', function(req, res) {
 });
 
 // GET one
-api.get('/edit/:id', function(req, res) {
+api.get('/edit/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /edit/:id " + req);
     var id = parseInt(req.params.id);
     var data = req.app.locals.BannerItem.query;
