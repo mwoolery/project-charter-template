@@ -4,8 +4,8 @@
       "description": "This is a short item",
       "startDate": "11-12-2018",
       "endDate": "11-13-2018",
-      "startTime": "12:00",
-      "endTime": "12:00",
+      "startTime": "12:00 AM",
+      "endTime": "12:00 AM",
       "priority": true
       
     },
@@ -14,8 +14,8 @@
         "description": "This is a short item",
         "startDate": "11-13-2018",
         "endDate": "11-14-2018",
-        "startTime": "12:00",
-        "endTime": "12:00",
+        "startTime": "12:00 AM",
+        "endTime": "12:00 AM",
         "priority": true
         
     },
@@ -24,8 +24,8 @@
         "description": "This is a short item",
         "startDate": "11-15-2018",
         "endDate": "11-16-2018",
-        "startTime": "12:00",
-        "endTime": "12:00",
+        "startTime": "12:00 AM",
+        "endTime": "12:00 AM",
         "priority": false
         
     }

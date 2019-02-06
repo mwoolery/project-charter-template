@@ -121,17 +121,14 @@ api.post('/save', function(req, res) {
     item.endDate = req.body.endDate;
     item.startTime = req.body.startTime;
     item.endTime = req.body.endTime;
-    //item.priority = req.body.priority;
-    var isPriority = req.body.priority;
-    if(isPriority=="on"){
-        isPriority = true;
-    }else{
-        isPriority =false;
+    var temp = "true";
+    if(!req.body.priority || req.body.priority == null || req.body.priority == undefined){
+        temp = false;
     }
-    item.priority = isPriority;
+    item.priority = temp;
     item.link = req.body.link;
     data.push(item);
-    console.log("SAVING NEW ITEM " + JSON.stringify(item));
+    console.log(isPriority);
     return res.redirect('/banneritem');
 });
 

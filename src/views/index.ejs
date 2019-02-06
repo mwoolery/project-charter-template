@@ -14,10 +14,40 @@
           
             <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
                 <% var today = new Date(); 
-                  var startDate = new Date(BannerItem.query[i].startDate);
-                  var endDate = new Date(BannerItem.query[i].endDate);
+                var sd = BannerItem.query[i].startDate
+                var st = BannerItem.query[i].startTime
+                var start = sd + " " + st
+                
+                var ed = BannerItem.query[i].endDate
+                var et = BannerItem.query[i].endTime
+                var end = ed + " " + et
+                
+                var startDate = new Date(start);
+                var endDate = new Date(end);
+                
                 %>
-                  <% if((today >= startDate) && (today <= endDate) ){ %>
+                  <% if((today >= startDate) && (today <= endDate) && (BannerItem.query[i].priority == true) ){ %>
+
+                    <%=  BannerItem.query[i].description  %>
+                    <br> 
+                 <% } %>
+              <% } %>
+              
+              <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
+                <% var today = new Date(); 
+                var sd = BannerItem.query[i].startDate
+                var st = BannerItem.query[i].startTime
+                var start = sd + " " + st
+                
+                var ed = BannerItem.query[i].endDate
+                var et = BannerItem.query[i].endTime
+                var end = ed + " " + et
+                
+                var startDate = new Date(start);
+                var endDate = new Date(end);
+                
+                %>
+                  <% if((today >= startDate) && (today <= endDate) && (BannerItem.query[i].priority == false) ){ %>
 
                     <%=  BannerItem.query[i].description  %>
                     <br> 
