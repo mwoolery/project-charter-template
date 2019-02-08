@@ -128,7 +128,6 @@ api.post('/save', function(req, res) {
     item.priority = temp;
     item.link = req.body.link;
     data.push(item);
-    console.log(isPriority);
     return res.redirect('/banneritem');
 });
 

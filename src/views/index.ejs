@@ -27,9 +27,11 @@
                 
                 %>
                   <% if((today >= startDate) && (today <= endDate) && (BannerItem.query[i].priority == true) ){ %>
-
-                    <%=  BannerItem.query[i].description  %>
-                    <br> 
+                    <% if (BannerItem.query[i].link.length != 0) { %>
+                      <a href="<%= BannerItem.query[i].link %>"> <%=  BannerItem.query[i].description  %></a><br>
+                    <% } else { %>
+                      <%=  BannerItem.query[i].description  %><br>
+                    <% } %>
                  <% } %>
               <% } %>
               
@@ -48,9 +50,11 @@
                 
                 %>
                   <% if((today >= startDate) && (today <= endDate) && (BannerItem.query[i].priority == false) ){ %>
-
-                    <%=  BannerItem.query[i].description  %>
-                    <br> 
+                    <% if (BannerItem.query[i].link.length != 0) { %>
+                      <a href="<%= BannerItem.query[i].link %>"> <%=  BannerItem.query[i].description  %></a><br>
+                    <% } else { %>
+                      <%=  BannerItem.query[i].description  %><br>
+                    <% } %>
                  <% } %>
               <% } %>
           
