@@ -25,7 +25,7 @@
 		</tr>
 		<tr>
 			<th>Description</th>
-			<td><input type="text" class="form-control" name="description" value="<%= BannerItem.description %>" maxlength="50">
+			<td><input type="text" class="form-control" name="description" value="<%= BannerItem.description %>" required>
 				</input></td>
 		</tr>
 		<tr>
@@ -122,9 +122,32 @@
 		</tr>
 		<tr>
 			<th>Link</th>
-			<td><input type="text" class="form-control" name="link" value="<%= BannerItem.link %>" maxlength="150"> </input></td>
+			<td><input type="text" class="form-control" name="link" value="<%= BannerItem.link %>"> </input></td>
 		</tr>
-
+		<script>
+			function checkTimes() {
+				console.log("checktimes called");
+				var sd = document.getElementById("startDate").value;
+				var st = document.getElementById("startTime").value;
+				var start = sd + " " + st
+	
+				var ed = document.getElementById("endDate").value;
+				var et = document.getElementById("endTime").value;
+				var end = ed + " " + et
+	
+				var startDate = new Date(start);
+				var endDate = new Date(end);
+				if (startDate<endDate){
+					// start date is before end date
+					document.banneritemform.submit();
+				}else{
+					//start date is after end date, need to fix your times.
+					alert("End Date and Time is before Start Date and Time. Fix the End Date and Time. ");
+					return false;
+				}
+	
+			}
+		</script>
 		<tr>
 			<td colspan="2">
 				<div class="row">
@@ -132,7 +155,7 @@
 						<!-- <a href="/estimatePartMileage" >Return to list</a> -->
 					</div>
 					<div class="col-md-5">
-						<button type="submit" class="btn btn-caution">Save this item</button>
+						<button type="submit" class="btn btn-caution" onclick="return checkTimes();">Save this item</button>
 					</div>
 				</div>
 			</td>
