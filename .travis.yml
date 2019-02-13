@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 10.15.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: "bbaf70f9-68a0-429c-bb2a-0f1462de9eab"
+  app: hughesfieldhouse
+  on:
+    repo: mwoolery/project-charter-template
