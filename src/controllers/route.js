@@ -39,9 +39,9 @@ module.exports = function(app){
         res.render('meetingRooms')
     })
 
-    app.get('/offline', function (req, res) {
-        res.render('offline')
-    })
+    // app.get('/offline', function (req, res) {
+    //     res.render('offline')
+    // })
 
     app.get('/', function(req, res){
         res.render('index');

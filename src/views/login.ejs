@@ -1,5 +1,9 @@
 
-
+<script>
+  window.onload = function(){ 
+   document.title = "Hughes Fieldhouse | Login"; 
+}
+ </script>
  
   <!-- Page Content -->
   <div class="container">
@@ -10,16 +14,16 @@
           <form method="post" action="/login">
             <div class="form-group">
                 <small id="emailHelp" class="form-text text-muted">Login For Hughes Fieldhouse Admin.</small>
-              <label for="exampleInputusername">Username</label>
-              <input type="username"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" name="username">
+              <label for="username">Username</label>
+              <input type="username"  class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter username" name="username">
              
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+              <input type="password" class="form-control" id="password" placeholder="Password" name="password">
             </div>
            
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button id= "btn" type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
