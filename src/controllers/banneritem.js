@@ -3,7 +3,7 @@ var api = express.Router();
 var find = require('lodash.find');
 var remove = require('lodash.remove');
 var findIndex = require('lodash.findindex');
-var Model = require('../models/bannerItem.js');
+var Model = require('../models/banneritem.js');
 const notfoundstring = 'No such aggregate material';
 LocalStrategy = require("passport-local"),
 passportLocalMongoose = require("passport-local-mongoose"),
@@ -111,9 +111,12 @@ api.get('/edit/:id',isLoggedIn, function(req, res) {
 
 // POST new
 api.post('/save', function(req, res) {
+    
     console.log("Handling POST " + req);
     var data = req.app.locals.BannerItem.query;
+    
     var item =  new Model;
+    
     console.log("NEW ID " + req.body._id);
     item._id = parseInt(req.body._id);
     item.description = req.body.description;
@@ -128,6 +131,16 @@ api.post('/save', function(req, res) {
     item.priority = temp;
     item.link = req.body.link;
     data.push(item);
+    Model.create({
+       _id:  item._id,
+      description: item.description,
+      startDate: item.startDate,
+      endDate: item.endDate,
+      startTime: item.startTime,
+      endTime: item.endTime,
+      priority : item.priority,
+      link: item.link
+    });
     return res.redirect('/banneritem');
 });
 
@@ -159,6 +172,17 @@ api.post('/save/:id', function(req, res) {
     item.priority = isPriority;
     
     item.link = req.body.link;
+    Model.findOne({ _id: id }, function (err, doc){
+       doc.description = item.description
+       doc.startDate = item.startDate
+       doc.endDate = item.endDate
+       doc.startTime = item.startTime
+       doc.endTime = item.endTime
+       doc.priority = item.priority
+       doc.link = item.link
+       doc.save();
+     });
+     
     console.log("SAVING UPDATED ITEM " + JSON.stringify(item));
     return res.redirect('/banneritem');
 });
@@ -172,6 +196,11 @@ api.post('/delete/:id', function(req, res, next) {
     var item = remove(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     console.log("Deleted item " + JSON.stringify(item));
+    Model.remove({ name: 'bourne' }, function (err, doc){
+        doc.name = 'jason bourne';
+        doc.visits.$inc();
+        doc.save();
+      });
     return res.redirect('/banneritem');
 });
 

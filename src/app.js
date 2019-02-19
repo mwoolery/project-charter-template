@@ -10,7 +10,8 @@ var mongoose = require("mongoose"),
 
 const bodyParser = require("body-parser")
 const expressLayouts = require('express-ejs-layouts');
-
+const session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
 var app = express();
 
 // mongoose.connect("mongodb://localhost:27017/database");
@@ -23,13 +24,38 @@ const dbconnection = process.env.MONGO_CONNECTION || mgconfig.MONGO_CONNECTION
 mongoose.connect(dbconnection);
 
 
-//Database set up in code block below
-const Datastore = require('nedb');
-var db = new Datastore();
-db.loadDatabase();
 
+var uri = dbconnection
 
+mongoose.Promise = global.Promise;
+// mongoose.connect(url)
+var promise = mongoose.connect(uri, {autoIndex:true, autoReconnect:true})
+promise.then(function (db) {
+  // initialize data ............................................
+  require('./utils/seeder.js')(app)  // load seed data
+})
 
+mongoose.connection.once('open', function () {
+ 
+  console.log("Connected to mongo server.");
+  mongoose.connection.on('connected', function () {
+    console.log("Connected .");
+  })
+
+  mongoose.connection.on('disconnected', function () {
+    console.log("disconnect.");
+  })
+
+  mongoose.connection.on('reconnected', function () {
+    console.log("reconnect.");
+  })
+
+  mongoose.connection.on('error', function (err) {
+    console.log("ERREEOREOROOEROROR.");
+    process.exit(1)
+  })
+  
+})
 
 
 
@@ -38,7 +64,12 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(require("express-session")({
   secret:"Rusty is the best og in the world",
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: false,
+  store: new MongoStore({
+    mongooseConnection: mongoose.connection,
+    url: dbconnection,
+    autoReconnect: true
+  })
 }));
 app.use(bodyParser.json())
 
@@ -46,12 +77,7 @@ app.set("views", path.resolve(__dirname, "views"));
 app.set('view engine', 'ejs');
 
 
-//set up seed data
-var BannerItem = require('./data/banneritem.json');
-db.insert(BannerItem);
-app.locals.BannerItem = db.find(BannerItem);
-console.log(Object.keys(BannerItem).length+ " BannerItem");
-console.log(BannerItem);
+
 app.use('/banneritem', require('./controllers/banneritem.js'));
 
 app.use(passport.initialize());
@@ -141,3 +167,4 @@ app.post("/contact", function (req, res) {
 
 app.listen(port)
 console.log("you are listening to port 3000")
+module.exports = app
