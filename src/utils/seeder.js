@@ -1,7 +1,7 @@
 
 const Datastore = require('nedb')
 const BannerItem = require('../data/banneritem.json')
-
+const Model = require("../models/bannerItem.js");
 
 module.exports = (app) => {
  
@@ -14,12 +14,20 @@ module.exports = (app) => {
  
 
   // insert the sample data into our datastore
-  db.BannerItem.insert(BannerItem)
+ 
 
   
 
   // initialize app.locals (these objects will be available to our controllers)
-  app.locals.BannerItem = db.BannerItem.find(BannerItem)
   
+  Model.find({}, function(err, items) {
+    var data = [];
+
+    items.forEach(function(banneritem) {
+        data.push(banneritem);
+    });
+    db.BannerItem.insert(data)
+    app.locals.BannerItem = db.BannerItem.find(data)
+  })
 
 }

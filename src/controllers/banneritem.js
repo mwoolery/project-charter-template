@@ -26,16 +26,27 @@ passportLocalMongoose = require("passport-local-mongoose"),
 
 
 api.get('/findall', function(req, res){
-    res.setHeader('Content-Type', 'application/json');
-    var data = req.app.locals.BannerItem.query;
-    res.send(JSON.stringify(data));
+    //res.setHeader('Content-Type', 'application/json');
+    Model.find({}, function(err, items) {
+        var data = [];
+    
+        items.forEach(function(banneritem) {
+            data.push(banneritem);
+        });
+    
+        res.send(data);  
+      })
+    
+    
+   
+    //res.send(JSON.stringify(data));
 });
 
 api.get('/findone/:id', function(req, res){
      res.setHeader('Content-Type', 'application/json');
     var id = parseInt(req.params.id);
     var data = req.app.locals.BannerItem.query;
-    var item = find(data, { '_id': id });
+    var item = Model.find(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     res.send(JSON.stringify(item));
 });
@@ -57,7 +68,12 @@ api.get("/create",isLoggedIn, function(req, res) {
 api.get('/delete/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /delete/:id " + req);
     var id = parseInt(req.params.id);
-    var data = req.app.locals.BannerItem.query;
+    var data = Model.find({_id: id}, function(err, docs) {
+        if (!err){ 
+            console.log(docs);
+            process.exit();
+        } else {throw err;}
+    });
     var item = find(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     console.log("RETURNING VIEW FOR" + JSON.stringify(item));
@@ -148,14 +164,12 @@ api.post('/save', function(req, res) {
 //update
 
 api.post('/save/:id', function(req, res) {
-    console.log("Handling SAVE request" + req);
+    
     var id = parseInt(req.params.id);
-    console.log("Handling SAVING ID=" + id);
+   
     var data = req.app.locals.BannerItem.query;
     var item = find(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
-    console.log("ORIGINAL VALUES " + JSON.stringify(item));
-    console.log("UPDATED VALUES: " + JSON.stringify(req.body));
     item.description = req.body.description;
     item.startDate = req.body.startDate;
     item.endDate = req.body.endDate;
@@ -172,18 +186,30 @@ api.post('/save/:id', function(req, res) {
     item.priority = isPriority;
     
     item.link = req.body.link;
-    Model.findOne({ _id: id }, function (err, doc){
-       doc.description = item.description
-       doc.startDate = item.startDate
-       doc.endDate = item.endDate
-       doc.startTime = item.startTime
-       doc.endTime = item.endTime
-       doc.priority = item.priority
-       doc.link = item.link
-       doc.save();
-     });
+    Model.findById(req.params.id, function(err, p) {
+        if (!p)
+          return next(new Error('Could not load Document'));
+        else {
+          // do your updates here
+          p.description = item.description;
+          p.startDate = item.startDate;
+          p.endDate = item.endDate;
+          p.startTime = item.startTime;
+          p.endTime = item.endTime;
+          p.priority = item.priority;
+          p.link = item.link;
+      
+      
+          p.save(function(err) {
+            if (err)
+              console.log('error')
+            else
+              console.log('successfull update')
+          });
+        }
+      });
      
-    console.log("SAVING UPDATED ITEM " + JSON.stringify(item));
+   
     return res.redirect('/banneritem');
 });
 
@@ -196,11 +222,14 @@ api.post('/delete/:id', function(req, res, next) {
     var item = remove(data, { '_id': id });
     if (!item) { return res.end(notfoundstring); }
     console.log("Deleted item " + JSON.stringify(item));
-    Model.remove({ name: 'bourne' }, function (err, doc){
-        doc.name = 'jason bourne';
-        doc.visits.$inc();
-        doc.save();
-      });
+    Model.remove({ _id: id }, function(err) {
+        if (!err) {
+               console.log("successfull delete");
+        }
+        else {
+               console.log("error");
+        }
+    });
     return res.redirect('/banneritem');
 });
 
