@@ -68,21 +68,29 @@ api.get("/create",isLoggedIn, function(req, res) {
 api.get('/delete/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /delete/:id " + req);
     var id = parseInt(req.params.id);
-    var data = Model.find({_id: id}, function(err, docs) {
-        if (!err){ 
-            console.log(docs);
-            process.exit();
-        } else {throw err;}
-    });
-    var item = find(data, { '_id': id });
-    if (!item) { return res.end(notfoundstring); }
-    console.log("RETURNING VIEW FOR" + JSON.stringify(item));
-    return res.render('banneritem/delete.ejs',
+    var data = req.app.locals.BannerItem.query;
+    //var item = find(data, { '_id': id });
+    Model.findOne({_id: id}, function(err, item) {
+        var data = item;
+    
+        
+        
+        //res.send(data);  
+        res.render('banneritem/delete.ejs',
         {
             title: "Banner Items",
             layout: "bannerlayout.ejs",
-            BannerItem: item
+            BannerItem: data
         });
+      })
+    // if (!item) { return res.end(notfoundstring); }
+    // console.log("RETURNING VIEW FOR" + JSON.stringify(item));
+    // return res.render('banneritem/delete.ejs',
+    //     {
+    //         title: "Banner Items",
+    //         layout: "bannerlayout.ejs",
+    //         BannerItem: item
+    //     });
 });
 
 // GET /details/:id
