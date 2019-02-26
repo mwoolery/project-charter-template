@@ -29,7 +29,7 @@
 		</tr>
 		<tr>
 			<th>Description</th>
-			<td><input type="text" class="form-control" name="description" value="<%= BannerItem.description %>" required>
+			<td><input type="text" class="form-control" id="Description" name="description" value="<%= BannerItem.description %>" required>
 				</input></td>
 		</tr>
 		<tr>
@@ -126,7 +126,7 @@
 		</tr>
 		<tr>
 			<th>Link</th>
-			<td><input type="text" class="form-control" name="link" value="<%= BannerItem.link %>"> </input></td>
+			<td><input type="text" class="form-control" id="link" name="link" value="<%= BannerItem.link %>"> </input></td>
 		</tr>
 		<script>
 			function checkTimes() {
@@ -159,7 +159,7 @@
 						<!-- <a href="/estimatePartMileage" >Return to list</a> -->
 					</div>
 					<div class="col-md-5">
-						<button type="submit" class="btn btn-caution" onclick="return checkTimes();">Save this item</button>
+						<button type="submit" id="btn" class="btn btn-caution" onclick="return checkTimes();">Save this item</button>
 					</div>
 				</div>
 			</td>

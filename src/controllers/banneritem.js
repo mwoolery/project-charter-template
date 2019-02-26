@@ -61,7 +61,7 @@ api.get('/',isLoggedIn, function(req, res) {
 api.get("/create",isLoggedIn, function(req, res) {
     console.log('Handling GET /create' + req);
     res.render("banneritem/create.ejs",
-        { title: "Banner Item Create", layout: "bannerlayout.ejs" });
+        { title: "Banner Item", layout: "bannerlayout.ejs" });
 });
 
 // GET /delete/:id
@@ -78,7 +78,7 @@ api.get('/delete/:id',isLoggedIn, function(req, res) {
         //res.send(data);  
         res.render('banneritem/delete.ejs',
         {
-            title: "Banner Item Delete",
+            title: "Banner Item",
             layout: "bannerlayout.ejs",
             BannerItem: data
         });
@@ -103,7 +103,7 @@ api.get('/details/:id',isLoggedIn, function(req, res) {
     console.log("RETURNING VIEW FOR" + JSON.stringify(item));
     return res.render('banneritem/details.ejs',
         {
-            title: "Banner Item Details",
+            title: "Banner Item",
             layout: "bannerlayout.ejs",
             BannerItem: item
         });
@@ -119,7 +119,7 @@ api.get('/edit/:id',isLoggedIn, function(req, res) {
     console.log("RETURNING VIEW FOR" + JSON.stringify(item));
     return res.render('banneritem/edit.ejs',
         {
-            title: "Banner Item Edit",
+            title: "Banner Item",
             layout: "bannerlayout.ejs",
             BannerItem: item
         });
