@@ -262,8 +262,8 @@ width: 100%;
   margin-bottom: 50px;
   color:black;
 }
-@media (max-width: 800px) {
-.hideInPhone{
-  visibility: hidden;
-}
+@media (max-width: 650px) {
+  #mobileTestDiv{
+    display: none !important;
+  }
 }
