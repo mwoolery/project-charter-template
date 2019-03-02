@@ -106,7 +106,9 @@ app.get("/logout", function(req, res){
   });
 
   app.get('*', function(req, res){
-    res.send('error 404');
+    res.render('error',
+    { title: "error", layout: "error.ejs" });
+
   });
 // function isLoggedIn(req, res, next){
 //     if(req.isAuthenticated()){
