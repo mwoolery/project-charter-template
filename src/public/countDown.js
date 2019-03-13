@@ -1,3 +1,5 @@
+
+// countdown function available for an inputed time to display underneath the index page picture. Was used for countdown to opening
 function countDownfunc() {
 
         var countDownDate = new Date("Oct 12, 2018 16:00:25").getTime();

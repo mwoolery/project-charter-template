@@ -1,4 +1,8 @@
+<!--Create view for the banner editor -->
+
 <br />
+
+<!-- Change the title of the document so the Test suite can detect if the proper page was loaded, also gives the title to the tab -->
 <script>
 	window.onload = function(){ 
 	 document.title = "Banner Item Create"; 
@@ -17,6 +21,8 @@ for (var i=0; i<BannerItem.query.length; i++) {
         }
 }
 %>
+
+<!--Instructions for the user to use -->
 <h3>Information</h3>
 <ul>
 	<li><b>Description:</b> Place the message that you would like to display on the home page in this box</li>
@@ -29,7 +35,7 @@ for (var i=0; i<BannerItem.query.length; i++) {
   </ul>
   
   
-
+<!-- fields for the user to fill out to create the banner item-->
 <div class="content">
 	<div>
 		<form name="banneritemform" method="POST" action="/banneritem/save" + _id.value>
@@ -55,6 +61,7 @@ for (var i=0; i<BannerItem.query.length; i++) {
 					</div>
 				</div>
 			</div>
+			<!-- jquery datetimepicker for startDate on this page-->
 			<script>
 				$(document).ready(function () {
 					$('.datepick1').datetimepicker({
@@ -79,6 +86,7 @@ for (var i=0; i<BannerItem.query.length; i++) {
 		</div>
 
 	</div>
+	<!-- jquery datetimepicker for startTime on this page-->
 	<script type="text/javascript">
 		$(function () {
 			$('#datetimepicker3').datetimepicker({
@@ -96,6 +104,7 @@ for (var i=0; i<BannerItem.query.length; i++) {
 			</div>
 		</div>
 	</div>
+	<!-- jquery datetimepicker for endDate on this page-->
 	<script>
 		$(document).ready(function () {
 			$('.datepick2').datetimepicker({
@@ -104,6 +113,7 @@ for (var i=0; i<BannerItem.query.length; i++) {
 			});
 		});
 	</script>
+	
 	<div class="form-group">
 		<label for="endTime">End Time:</label>
 		<div class="form-group">
@@ -116,6 +126,7 @@ for (var i=0; i<BannerItem.query.length; i++) {
 		</div>
 
 	</div>
+	<!-- jquery datetimepicker for endTime on this page-->
 	<script type="text/javascript">
 		$(function () {
 			$('#datetimepicker4').datetimepicker({
@@ -140,6 +151,8 @@ for (var i=0; i<BannerItem.query.length; i++) {
 	</div>
 	</form>
 	<br />
+
+	<!--  Function that checks to see if the user entered a start time that occurs before the end time so there is some range for the item to be displayed-->
 	<script>
 		function checkTimes() {
 			console.log("checktimes called");

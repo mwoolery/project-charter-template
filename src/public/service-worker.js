@@ -2,7 +2,7 @@
 var STATIC_CACHE = 'hfcache-s';
 var DYNAMIC_CACHE = 'hfhcache-d';
 
-//install the serviceworker
+//install the serviceworker to the browser
 self.addEventListener('install', function (event) {
   console.log('Installing Service Worker ...', event);
   event.waitUntil(
@@ -14,7 +14,7 @@ self.addEventListener('install', function (event) {
   )
 });
 
-// activate after it is registered
+// activate after it is registered. Update the cache if possible
 self.addEventListener('activate', function (event) {
   console.log('Activating Service Worker ....', event);
   event.waitUntil(

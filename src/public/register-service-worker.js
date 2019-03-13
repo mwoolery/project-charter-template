@@ -1,6 +1,6 @@
+// register a service worker for PWA
 (function() {
     'use strict';
-  
     var app = {
       isLoading: true,
       spinner: document.querySelector('.loader'),
@@ -10,7 +10,7 @@
   
   
   
-  
+    // checks to see a service worker is in navigator, if not register the service worker
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('/service-worker.js')

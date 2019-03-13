@@ -1,3 +1,5 @@
+// controller for /banneritem model and views
+
 var express = require('express');
 var api = express.Router();
 var find = require('lodash.find');
@@ -10,6 +12,7 @@ passportLocalMongoose = require("passport-local-mongoose"),
  mongoose = require("mongoose"),
   passport = require("passport");
 
+  // function that checks that user is logged in to passport session. Goes to next page aka banneritem/index if succesfull and back to login if unsuccessfull
   function isLoggedIn(req, res, next){
     if(req.session.passport && req.session.passport.user){
        return next();
@@ -17,14 +20,10 @@ passportLocalMongoose = require("passport-local-mongoose"),
     res.redirect("/login");
   }
 
-// See app.js to find default view folder (e.g.,"views")
-// see app.js to find  default URI for this controller (e.g., "aggregateMaterial")
-// Specify the handler for each required combination of URI and HTTP verb 
-// HTML5 forms can only have GET and POST methods (use POST for DELETE)
 
 // HANDLE JSON REQUESTS --------------------------------------------
 
-
+// Find all items in the database, used to test that server is getting all json responses
 api.get('/findall', function(req, res){
     //res.setHeader('Content-Type', 'application/json');
     Model.find({}, function(err, items) {
@@ -39,9 +38,10 @@ api.get('/findall', function(req, res){
     
     
    
-    //res.send(JSON.stringify(data));
+    
 });
 
+// Find one id, for a given id return the json data for that id
 api.get('/findone/:id', function(req, res){
      res.setHeader('Content-Type', 'application/json');
     var id = parseInt(req.params.id);
@@ -51,20 +51,21 @@ api.get('/findone/:id', function(req, res){
     res.send(JSON.stringify(item));
 });
 
+// banneritem/index page,  this is allows any routes in banner item to return to the index page by providing "/" to the href
 api.get('/',isLoggedIn, function(req, res) {
     console.log("Handling GET " + req);
     return res.render('banneritem/index.ejs',
         { title: "Banner Items", layout: "bannerlayout.ejs" });
 });
 
-// GET create
+// GET create, returns the create page where the user will create a new banner item
 api.get("/create",isLoggedIn, function(req, res) {
     console.log('Handling GET /create' + req);
     res.render("banneritem/create.ejs",
         { title: "Banner Item", layout: "bannerlayout.ejs" });
 });
 
-// GET /delete/:id
+// GET /delete/:id , returns the delete page for the given id so that the user can see the data and be sure they want to delete
 api.get('/delete/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /delete/:id " + req);
     var id = parseInt(req.params.id);
@@ -83,17 +84,9 @@ api.get('/delete/:id',isLoggedIn, function(req, res) {
             BannerItem: data
         });
       })
-    // if (!item) { return res.end(notfoundstring); }
-    // console.log("RETURNING VIEW FOR" + JSON.stringify(item));
-    // return res.render('banneritem/delete.ejs',
-    //     {
-    //         title: "Banner Items",
-    //         layout: "bannerlayout.ejs",
-    //         BannerItem: item
-    //     });
 });
 
-// GET /details/:id
+// GET /details/:id , Gets the detail page so the user can read the data, no data modification done
 api.get('/details/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /details/:id " + req);
     var id = parseInt(req.params.id);
@@ -109,7 +102,7 @@ api.get('/details/:id',isLoggedIn, function(req, res) {
         });
 });
 
-// GET one
+// Get /edit/:id , gets the edit page so the user can modify the selected banneritem 
 api.get('/edit/:id',isLoggedIn, function(req, res) {
     console.log("Handling GET /edit/:id " + req);
     var id = parseInt(req.params.id);
@@ -126,14 +119,9 @@ api.get('/edit/:id',isLoggedIn, function(req, res) {
 });
 
 
-// HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
 
-// POST new
-/**
- * adding a new item
- */
 
-// POST new
+// POST new  , saves a new item to the database. Gets user input from the requested page and puts data into each field for a creation of a banneritem
 api.post('/save', function(req, res) {
     
     console.log("Handling POST " + req);
@@ -169,7 +157,7 @@ api.post('/save', function(req, res) {
 });
 
 
-//update
+//handles the edit of the page, for a given id save it to the database. Mongodb will save it at the selected id
 
 api.post('/save/:id', function(req, res) {
     
@@ -221,7 +209,7 @@ api.post('/save/:id', function(req, res) {
     return res.redirect('/banneritem');
 });
 
-//delete
+// for a given id, remove it from the database
 api.post('/delete/:id', function(req, res, next) {
     console.log("Handling DELETE request" + req);
     var id = parseInt(req.params.id);
@@ -242,5 +230,5 @@ api.post('/delete/:id', function(req, res, next) {
 });
 
   
-  
+// export this so app.js can use it.
 module.exports = api;

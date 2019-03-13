@@ -1,7 +1,9 @@
+<!-- Edit view for banneritem editor, allows user to edit the banneritems-->
 <br />
 <h2>Edit
 	<%= title %>
 </h2>
+<!-- gives the page a title and will be used to test that the page loads properly-->
 <script>
 	window.onload = function(){ 
 	 document.title = "Banner Item Edit"; 
@@ -19,6 +21,7 @@
 	<li><b>Link:</b> Paste in a url to a link that you would like direct the users to if they click on the banner item. Leave blank if you only want to display text and not link to another site</li>
   </ul>
 <br />
+<!-- form for the user to fill to edit the data-->
 <form method="POST" action="/banneritem/save/<%= BannerItem._id %>">
 	<table class="table table-hover table-bordered">
 		<tr>
@@ -45,6 +48,7 @@
 					</div>
 				</div>
 				</div>
+				<!-- jquery datetimepicker for startDate on this page-->
 				<script>
 					$(document).ready(function () {
 						$('.datepick1').datetimepicker({
@@ -67,6 +71,7 @@
 						<span class="glyphicon glyphicon-time"></span>
 					</span>
 				</div>
+				<!-- jquery datetimepicker for startTIme on this page-->
 				<script type="text/javascript">
 					$(function () {
 						$('#datetimepicker3').datetimepicker({
@@ -89,6 +94,7 @@
 					</div>
 				</div>
 				</div>
+				<!-- jquery datetimepicker for endDate on this page-->
 				<script>
 					$(document).ready(function () {
 						$('.datepick2').datetimepicker({
@@ -110,6 +116,7 @@
 						<span class="glyphicon glyphicon-time"></span>
 					</span>
 				</div>
+				<!-- jquery datetimepicker for endTime on this page-->
 				<script type="text/javascript">
 					$(function () {
 						$('#datetimepicker4').datetimepicker({
@@ -128,6 +135,7 @@
 			<th>Link</th>
 			<td><input type="text" class="form-control" id="link" name="link" value="<%= BannerItem.link %>"> </input></td>
 		</tr>
+		<!-- Check to ensure that the user entered proper start date and end date times so that the banner item is displayed for some period of time-->
 		<script>
 			function checkTimes() {
 				console.log("checktimes called");
@@ -156,7 +164,6 @@
 			<td colspan="2">
 				<div class="row">
 					<div class="col-md-2">
-						<!-- <a href="/estimatePartMileage" >Return to list</a> -->
 					</div>
 					<div class="col-md-5">
 						<button type="submit" id="btn" class="btn btn-caution" onclick="return checkTimes();">Save this item</button>

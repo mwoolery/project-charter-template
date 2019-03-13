@@ -1,3 +1,5 @@
+<!-- contact page that provides a form for the user to fill out to contact the fieldhouse team-->
+<!-- script that gives a title to the page that will be used by the test to ensure proper page load-->
 <script>
   window.onload = function(){ 
    document.title = "Hughes Fieldhouse | Contact"; 
@@ -8,12 +10,12 @@
 
    <br>
    <br>
-    <!-- var x = document.getElementById("myForm"); -->
+    
     <h1>Contact Form</h1>
     <div class="row" >
         
         <div class = "col-md-5" >
-        <!--Contact Form can be placed inside here-->
+        
         
         <form action="/contact" method="post" id=contactform >
 
@@ -44,6 +46,9 @@
             </div>
           </div>
 
+           <!-- Form group for phone number -->
+
+
           <div class="form-group">
             <label class="col-md-8 control-label">Phone Number</label>
             <div class="col-md-8 inputGroupContainer">
@@ -55,6 +60,7 @@
             </div>
           </div>
 
+          <!-- Form group for reason of contact -->
       
           <div class="form-group">
             <label class="col-md-8 control-label">Reason for Contact</label>
@@ -83,7 +89,7 @@
             </div>
           </div>
       
-
+          <!-- Form group for start time of reservation -->
           <div class="form-group" id="company-group">
             <label class="col-md-8 control-label">Reservation Start Time</label>
             <div class="col-md-8 inputGroupContainer">
@@ -93,7 +99,7 @@
               </div>
             </div>
           </div>
-
+           <!-- Form group for end time of reservation -->
           <div class="form-group" id="company-group">
             <label class="col-md-8 control-label">Reservation End Time</label>
             <div class="col-md-8 inputGroupContainer">
@@ -121,7 +127,7 @@
           
 
 
-
+ <!-- Date picker scripts for the start and end times of reservation -->
 <script>
     $(function () {
   $('#date1').datetimepicker();
@@ -146,8 +152,6 @@
 
       
         </form>
-          
-            <!-- <button type="submit" form="contactform" value="Submit">Submit</button> -->
             
         </div>
         

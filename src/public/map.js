@@ -1,18 +1,4 @@
-
-// function getLocation() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.watchPosition(showPosition);
-//     } else { 
-//        alert("Geolocation is not supported by this browser.");
-//     }
-
-// }
-// function showPosition(position) {
-//  const Latitude= position.coords.latitude ;
-//    const Longitide= position.coords.longitude;
-// }
-// //pin location in google maps
-
+// google maps script for the map. Uses the position from showPosition to place a geolocation on the map
 var Lat= "";var Lon="";
 var x=document.getElementById("iframeid").src;
 function getLocation() {
@@ -22,6 +8,7 @@ function getLocation() {
        alert("Geolocation is not supported by this browser.");
     }
 }
+// get position of the hughes fieldhouse
 function showPosition(position) {
     Lat= position.coords.latitude ; 
     Lon= position.coords.longitude; 

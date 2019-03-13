@@ -1,5 +1,6 @@
-
+ <!-- index page for the hughes fieldhouse site -->
   <!-- Page Content -->
+   <!-- Gives the page a title that will be used by the tests to ensure proper page load -->
   <script>
    window.onload = function(){ 
     document.title = "Hughes Fieldhouse"; 
@@ -15,7 +16,8 @@
         background-color: #006747;
         color: white;
         "> 
-          
+           <!-- display queries for the banner items, finds items and decides where they should be placed -->
+            <!-- gets all currently dated items and displays ones that are priority first, includes options for links or no links -->
             <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
                 <% var today = new Date(); 
                 var sd = BannerItem.query[i].startDate
@@ -38,7 +40,7 @@
                     <% } %>
                  <% } %>
               <% } %>
-              
+              <!-- gets all currently dated items and displays ones that are not priority, includes options for links or no links -->
               <% for (var i = 0; i < BannerItem.query.length; i++) { %> 
                 <% var today = new Date(); 
                 var sd = BannerItem.query[i].startDate
@@ -68,9 +70,10 @@
         </div>
   </div>
 
+  <!-- image slideshow -->
     <div class="row">
       <div class="col-md-8 imageqwe">
-        <!-- <img class="img-fluid" src="https://www.nwmissouri.edu/HughesFieldhouse/images/main-homepage.jpg" alt=""> -->
+        
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -105,7 +108,7 @@
             </a>
           </div>
         </div>
-
+<!-- countdown display for when the countdown script when it has a date entered to look forward to -->
         <br>
         <p class="countDownStyle" id="countDown"> &nbsp;</p>
         <br>
@@ -186,20 +189,8 @@
       </div>
       <div class="col-md-4">
         <!-- asside -->
-        <!---
-        <section class="sec1">
-
-          <a href="/events" style="color: #000000;">
-            <center>Today's events</center>
-          </a>
-
-
-          <iframe src='https://www.aaiscloud.com/NWMOStateU/Calendars/ActivityCalendar.aspx?calendarId=1f100ed0-c7f9-11e8-8b07-e5af6baab4cb&condensedView=1'
-            style='margin:0' width='100%' height='300px'>
-            <p>Your browser does not support iframes.</p>
-          </iframe>
-        </section>
-      -->
+       
+      
         <br>
         <section class="sec1">
           <strong> <center>Contact us</center></strong>
@@ -293,6 +284,8 @@
   </div>
   <div id="mobileTestDiv"> &nbsp;
   </div>
+
+  <!-- uncomment the code below to register a service worker-->
   <!--<script>
   
   (function() {
