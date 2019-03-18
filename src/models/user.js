@@ -1,4 +1,4 @@
-// user model used for passport login
+// user model used for passport login, used by the database to reference for what a user's data should be.
 
 // require mongoose and mongoose local strategy for Passport Models
 var mongoose = require("mongoose");

@@ -1,4 +1,4 @@
-//Model for Banneritem
+//Model for Banneritem, used as a way for Mongoose to create new items for the database.
 
 // Require Mongoose to perform database actions
 var mongoose = require('mongoose')

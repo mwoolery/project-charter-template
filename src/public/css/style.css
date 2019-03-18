@@ -1,12 +1,11 @@
 /*!
- * Start Bootstrap - Portfolio Item (https://startbootstrap.com/template-overviews/portfolio-item)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ * Home page css
  */
 body{
   top: 0;
 }
 
+/* logo that appears in the header*/
 .navlogo{
   z-index: 100;
   width: 90px;
@@ -25,6 +24,8 @@ body{
   /* visibility: hidden; */
 }
 }
+
+/*Used to make the nav's Hughes Fieldhouse text smaller for mobile.*/
 @media (max-width: 500px) {
   .smaller{
     /* visibility: hidden; */
@@ -33,31 +34,26 @@ body{
     top: 8px;
   }
   }
+  /*gives the background of the nav an image*/
 .backgroundNav{
-  /* background: url();   */
-  /* background-image: url(../img/header_logo.PNG); */
+ 
   
   background-image: url(../img/navbg.PNG);
-  /* background-color: rgba(240, 248, 255, 0.048); */
   background-repeat: repeat-x;
   position: absolute;
   padding-top: 0%;
-  /* margin: 10; */
-/* margin-left: auto;
-margin-inline-start: auto;
-margin-inline-end: auto;
-padding: 14px 16px; */
-
-width: 100%;
+  width: 100%;
 
 }
+/*colors used in the nav bar*/
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
-
+/*background of the page*/
 .backgroundcss{
   background-color: #ffffff;
 }
+/*collapse the mobile a bit*/
 @media (max-width: 800px) {
 .collapseBackground {
   /* background-color: #006747; */
@@ -66,10 +62,12 @@ width: 100%;
   text-align: right;
   /* color: black; */
 }
+/*Gives these classes the color black if they are made active*/
 .navbar-dark .navbar-nav .active{
   color: black;
 }
 }
+/*nav styling */
 .nwnav1{
     float: left;
     /* width: 960px; */
@@ -79,16 +77,14 @@ width: 100%;
     background-color: #ffffff;
     color: white;
 }
-
+/*nav logo styling */
  #nwlogo{
-  /* z-index: 50; */
-    /* width: 120px;
-    height: 10%; */
-     /* background: url(/images/header_logo.png);   */
+  
     position: absolute;
     top: 0;
     left: 0;  
 }  
+/*styling for the countdown if it is activated */
 @media (min-width: 992px) {
 .countDownStyle {
   text-align: center;
@@ -111,6 +107,7 @@ width: 100%;
     position: relative;
     width:100%;
   }}
+  /*image slideshow on the index styling */
 @media (min-width: 992px) {
 .imageqwe {
   max-width: 100%;
@@ -118,18 +115,10 @@ width: 100%;
 
 }
 }
-@media (min-width: 992px) {
-  
-}
-
-/* ul#nwMenu a.az {
-  width: 49px;
-  background-position: -709px top;
-} */
+/*nav link styling*/
 .nav-link {
   color: white;
   font-size: small;
-  /* color: white; */
   text-decoration: none;
   padding: 0 24px;
   line-height: 43px;
@@ -137,9 +126,9 @@ width: 100%;
   display: block;
   letter-spacing: 1.0px;
   text-align: center;
-  /* text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.007); */
+  
 }
-
+/*section styling*/
 .sec1{
   background-color:rgba(109, 105, 105,0.5);
   border-radius:25px;
@@ -155,6 +144,7 @@ width: 100%;
   overflow: hidden
   
 }
+/*section styling*/
 .sec2{
   background-color:rgba(109, 105, 105,0.5);
   border-radius:25px;
@@ -173,6 +163,7 @@ width: 100%;
   
   
 }
+/*Iframe stylings when they are used in section*/
 .sec1 iframe{
   width: 100%;
 }
@@ -180,9 +171,9 @@ width: 100%;
   width:100% !important;
 }
 .blink{
-  /* color:rgb(17, 16, 16); */
   color:white;
 }
+/*map styling*/
 .mapouter
 {
   text-align:right;
@@ -206,15 +197,18 @@ width: 100%;
 .lis{
   list-style-type:none;
 }
+/*footer styling*/
 #footer-props {
   background-color: rgb(255, 255, 255);
   margin-top: 20px
 }
+/*social section in footer styling*/
 #social {
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 30px;
 }
+/*Discover section styling*/
 .discover{
   text-align: center;
   background: #175840;
@@ -225,7 +219,7 @@ width: 100%;
 
 }
 
-
+/*story board styling*/
 .storyb img:hover{
   transform: scale(1.1);
   
@@ -257,11 +251,12 @@ width: 100%;
    margin-top: 60px;
    border-radius: 20px;
 }
-
+/*center text used below images on infromational pages.*/
 .text-center {
   margin-bottom: 50px;
   color:black;
 }
+/*Test div that is used to verify that the mobile resizing is working*/
 @media (max-width: 650px) {
   #mobileTestDiv{
     display: none !important;

@@ -1,3 +1,8 @@
+/*
+    get the main routes of the hughes fieldhouse app
+    includes gets for /login , /awards , /contact , /events , /lockers , /meetingRooms , and / for index
+    other pages on the site link to the current hughes fieldhouse site on Northwest as the client wanted.
+*/
 var express = require('express');
 var api = express.Router();
 var find = require('lodash.find');

@@ -4,11 +4,13 @@
 <h2>Details of <%= title %></h2>
 <br/>
 <br/>
+<!--give the view a title to verify load in tets -->
 <script>
 	window.onload = function(){ 
 	 document.title = "Banner Item Details"; 
  }
    </script>
+   <!--set up table to display information -->
 <table class="table table-hover table-bordered">
     <thead>
       <tr>
@@ -24,6 +26,7 @@
 
         
     <tbody>
+            <!--insert the data -->
         <tr>
                 <td><%= BannerItem._id %></td>
                 <td><%= BannerItem.description %></td>
@@ -36,6 +39,7 @@
 </table>
 
 <br/>
+<!--Return to the listing -->
 <form method="get" action="/banneritem">
 	<input type="submit" value="Return to list" class="btn btn-caution" />
 </form>

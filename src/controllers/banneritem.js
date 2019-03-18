@@ -1,4 +1,12 @@
 // controller for /banneritem model and views
+/**
+ * Controller methods for the banneritem editor, this is accessed after logged as admin
+ * should check that the user is logged in
+ * functions include, get methods for json data listed as /findall , /findone/:id
+ * get the index of the banner item editor with /
+ * handle the views of Crud functions with /create, /edit/:id , details/:id , delete/:id
+ * handle the database functions with /save , /save/:id , and delete/:id
+ */
 
 var express = require('express');
 var api = express.Router();

@@ -10,6 +10,7 @@
  }
    </script>
 
+<!--Provide usage information -->
 <h3>Information</h3>
 <ul>
 	<li><b>Description:</b> Place the message that you would like to display on the home page in this box</li>
@@ -23,6 +24,7 @@
 <br />
 <!-- form for the user to fill to edit the data-->
 <form method="POST" action="/banneritem/save/<%= BannerItem._id %>">
+	<!--set up the table and insert data by the field titles -->
 	<table class="table table-hover table-bordered">
 		<tr>
 			<th>ID</th>
@@ -160,6 +162,7 @@
 	
 			}
 		</script>
+		<!--Save the item -->
 		<tr>
 			<td colspan="2">
 				<div class="row">

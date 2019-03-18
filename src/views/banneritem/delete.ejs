@@ -10,6 +10,7 @@
  }
    </script>
 <table class="table table-hover table-bordered">
+        <!--set up table for viewing the information that will be deleted -->
     <thead>
       <tr>
        <th>ID</th>
@@ -22,6 +23,7 @@
     </tr>
     </thead>
     <tbody>
+            <!--inserting the data into the table -->
         <tr>
                 <td><%= BannerItem._id %></td>
                 <td><%= BannerItem.description %></td>
@@ -37,11 +39,13 @@
 
 <div class="row">
 <div class="col-md-2">
+        <!--Return to list -->
 <form method="get" action="/banneritem">
 		<input type="submit" value="Return to list" class="btn btn-caution" />
 	</form>
 </div>
 <div class="col-md-10"> 
+        <!--Post the new item -->
 <form method="POST" action="/banneritem/delete/<%= BannerItem._id %>">
 	<button type="submit" id="deletebtn" class="btn btn-danger pull-right" >Delete this item</button>
 </form>

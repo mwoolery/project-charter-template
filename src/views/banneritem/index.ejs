@@ -9,6 +9,7 @@
    </script>
 	<div class="container">
 		<hr>
+		<!--Set up the table -->
 		<h2 id="testing">Banner Items</h2>
 		<p>There are
 			<%= BannerItem.query.length %>  Banner Items <br/>
@@ -26,6 +27,7 @@
 					<th>Actions</th>
 				</tr>
 			</thead>
+			<!--insert the data into the table-->
 			<tbody>
 				<% for (var i = 0; i < BannerItem.query.length; i++) { %>
 					<tr>
@@ -48,6 +50,7 @@
 							<%=  BannerItem.query[i].link %>
 						</td>
 						
+						<!--buttons to get to different data modification actions-->
 						<td>
 							<a href="banneritem/delete/<%=  BannerItem.query[i]._id %>"class="btn btn-danger" >	<span class="glyphicon glyphicon-trash"></span> Delete </a> |
 							<a href="banneritem/details/<%= BannerItem.query[i]._id %>"class="btn btn-info">	  <span class="glyphicon glyphicon-list-alt"></span> Details </a> |
