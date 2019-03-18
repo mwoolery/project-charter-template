@@ -11,7 +11,20 @@ in Heroku and Travis CI.  It also appears in the src folder for when someone is 
 ## .travis.yml
 This file is needed for setup to run the project in Travis CI.  It includes information about how Travis CI needs to set up the project as
 well as information on what to do with the project whenever the CI passes the build.  The file indicates that travis needs to build a 
-node.js project and then on a successful build deploy the project to the Heroku deployment.
+node.js project and then on a successful build deploy the project to the Heroku deployment.  The file contents can be seen below
+```
+language: node_js
+node_js:
+  - 10.15.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_API_KEY
+  app: hughesfieldhouse
+  on:
+    repo: mwoolery/project-charter-template
+
+```
 
 ## data/banneritem.json
 This file was used to set up dummy data for the app to use.  It contains 3 sample banneritems that would be inserted into the database to test.
