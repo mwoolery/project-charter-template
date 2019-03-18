@@ -17,7 +17,9 @@ node.js project and then on a successful build deploy the project to the Heroku 
 This file was used to set up dummy data for the app to use.  It contains 3 sample banneritems that would be inserted into the database to test.
 The 3 sample banneritems have different combinations of fields filled out to test to see if the banner item would display with the information
 in the right time frames with links or priority included.  An example of one of these can be seen below.
-'''
+
+```
+
 {
         "_id":  2,
         "description": "No Link",
@@ -29,7 +31,8 @@ in the right time frames with links or priority included.  An example of one of 
         "link": ""
         
     }
-'''
+
+```
 
 ## Public Folder
 The public folder is where assets needed for the site are kept.  This includes the manifest, css, images, and various js files used by the site
@@ -45,7 +48,8 @@ convienant to use the cdn there.
 The manifest file is needed for PWA functionality, it is also good to have in a site since it gives you options to style things in the
 browser that you cannot with html.  The manifest file gave us options to color tabs on mobile browsers and the option to provide a
 custom app icon if the user decided to add the page to their homescreen. The file contents can be seen below.
-'''
+```
+
 {
   "name": "HughesFH",
   "short_name": "HughesFH",
@@ -63,7 +67,8 @@ custom app icon if the user decided to add the page to their homescreen. The fil
   "background_color": "#006747",
   "theme_color": "#FFFFFF"
 }
-'''
+
+```
 
 ## Other code documentation
 Other code documentation can be seen in the actual files them selves.  All of our project files that did allow us to comment in them, 
