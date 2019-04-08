@@ -8,3 +8,5 @@ deploy:
   app: hughesfieldhouse
   on:
     repo: mwoolery/project-charter-template
+services:
+- mongodb
