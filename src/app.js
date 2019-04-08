@@ -15,7 +15,6 @@ const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
 var app = express();
 
-
 //select a config file for mailgun and database info, connect to mailgun, give the app a port, and connect to the database
 var port = process.env.PORT || 3000;
 const mgconfig = (process.env.NODE_ENV === "production") ? {} : require('./config.json') 
@@ -116,7 +115,6 @@ app.get("/logout", function(req, res){
     { title: "error", layout: "error.ejs" });
 
   });
-
 
 // contact form post to be handled
 app.post("/contact", function (req, res) {
